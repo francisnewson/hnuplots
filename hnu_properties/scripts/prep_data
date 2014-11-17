@@ -1,0 +1,9 @@
+#!/opt/local/bin/bash
+
+gawk '
+/^\s+#/ { print "mass", "pol", gensub( /#/, "", "g", $0 ) }
+!/^\s+#/ { title = $1;
+    mass = gensub( /.*([0-9][0-9][0-9]).*/, "\\1", "g", title );
+    pol = gensub( /.*(pos|neg).*/, "\\1", "g", title );
+    print mass, pol, $0
+} ' < $1 | column -t

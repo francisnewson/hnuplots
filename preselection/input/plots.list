@@ -1,0 +1,26 @@
+p5.data.nhod.v2.neg output/p5.data.nhod.neg.pdf P5 Data( nhod ) -VE
+p5.data.nhod.v2.neg output/p5.data.nhod.pos.pdf P5 Data( nhod ) +VE
+p5.data.q11t.v2.neg output/p5.data.q11t.v2.neg.pdf P5 Data( q11t ) -VE
+p5.data.q11t.v2.pos output/p5.data.q11t.v2.pos.pdf P5 Data( q11t ) +VE
+p5.data.q1.v2.neg output/p5.data.q1.neg.pdf P5 Data ( q1 ) -VE
+p5.data.q1.v2.pos output/p5.data.q1.pos.pdf P5 Data ( q1 ) +VE
+p5.k2pig.v2.neg output/p5.k2pig.neg.pdf P5 k2pig -VE
+p5.k2pig.v2.pos output/p5.k2pig.pos.pdf P5 k2pig +VE
+p5.k3pi0.v2.neg output/p5.k3pi0.neg.pdf P5 k3pi0 -VE
+p5.k3pi0.v2.pos output/p5.k3pi0.pos.pdf P5 k3pi0 +VE
+p5.k3pi.v2.neg output/p5.k3pi.neg.pdf P5 k3pi -VE
+p5.k3pi.v2.pos output/p5.k3pi.pos.pdf P5 k3pi +VE
+p5.ke2.v2.neg output/p5.ke2.neg.pdf P5 ke2 -VE
+p5.ke2.v2.pos output/p5.ke2.pos.pdf P5 ke2 +VE
+p5.ke3.v2.neg output/p5.ke3.neg.pdf P5 ke3 -VE
+p5.ke3.v2.pos output/p5.ke3.pos.pdf P5 ke3 +VE
+p5.km2.v2.neg output/p5.km2.neg.pdf P5 km2 -VE
+p5.km2.v2.pos output/p5.km2.pos.pdf P5 km2 +VE
+p5.km3.v2.neg output/p5.km3.neg.pdf P5 km3 -VE
+p5.km3.v2.pos output/p5.km3.pos.pdf P5 km3 +VE
+p6.data.kless.q11t.v2.pos output/p6.data.kless.q11t.pos.pdf P6 Data kless ( q11t ) +VE
+p6.data.kless.q1.v2.pos output/p6.data.kless.q1.pos.pdf P6 Data ( kless q1 ) +VE
+p6.data.km.q11t.v2.neg output/p6.data.km.q11t.neg.pdf P6 Data km ( q11t ) -VE
+p6.data.km.q11t.v2.pos output/p6.data.km.q11t.pos.pdf P6 Data km ( q11t ) +VE
+p6.data.km.q1.v2.neg output/p6.data.km.q1.neg.pdf P6 Data km ( q1 ) -VE
+p6.data.km.q1.v2.pos output/p6.data.km.q1.pos.pdf P6 Data km ( q1 ) +VE

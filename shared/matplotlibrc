@@ -1,0 +1,4 @@
+lines.linewidth : 2
+lines.markersize : 10
+xtick.labelsize : 14
+font.size : 14
