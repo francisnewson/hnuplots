@@ -1,0 +1,58 @@
+#!/usr/bin/env python
+import pandas as pd
+import matplotlib.pyplot as plt
+import yaml
+import numpy as np
+
+def yaml_dump( output_file, yaml_dict ):
+    '''Nice defaults for yaml.damp'''
+    output_file.write( yaml.dump ( yaml_dict,
+        default_flow_style = False,
+        explicit_start = True ) )
+
+#dt = pd.read_csv( "output/xyandeffs.dat", delim_whitespace = True )
+dt = pd.read_csv( "output/combo_effs.dat", delim_whitespace = True )
+
+print ( dt )
+
+print(  dt[np.isnan( dt['eff'])] )
+
+fig = plt.figure( figsize = [8, 6] )
+fig.set_tight_layout(True)
+ax = fig.add_subplot( 111 )
+ax.grid( 'on' )
+
+plotted =  ax.scatter( dt['x'], dt['y'], c = dt['eff'],
+        edgecolor = 'None', cmap = 'YlGnBu', 
+          marker = 's', vmin = 0.95 )
+
+cbar = plt.colorbar( mappable = plotted )
+
+plt.savefig( 'output/combo_effs.pdf', format = 'pdf', transparent = 'true' )
+
+ybins = list(dt[dt['x'] == 0 ]['miny'].astype( float ).values)
+ymaxbins = list(dt[dt['x'] == 0 ]['maxy'].astype( float ).values)
+ybins.append( ymaxbins[-1] )
+
+xbins = list(dt[dt['y'] == 0 ]['minx'].astype( float ).values)
+xmaxbins = list(dt[dt['y'] == 0 ]['maxx'].astype( float ).values)
+xbins.append( xmaxbins[-1] )
+
+effs = list(dt['eff'].astype(float).values)
+
+#print( xbins )
+#print( ybins )
+#print( effs)
+
+output = { 'xbins' : [float(x) for x in xbins],
+'ybins' : [float(y) for y in  ybins],
+'effs' : [float(eff) for eff in effs] }
+
+types = {}
+
+for k,v in output.items():
+    print (  type(k), type(v ) )
+
+yaml_dump( open('output/combo_effs.yaml', 'w'), output )
+
+print( len( effs ) )

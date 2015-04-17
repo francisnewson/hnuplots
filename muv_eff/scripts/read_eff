@@ -1,0 +1,48 @@
+#!/usr/bin/env python
+import yaml
+import pandas as pd
+import matplotlib.pyplot as plt
+
+def get_i( bins, val ):
+    if val < bins[0] or val > bins[-1]:
+        return -1
+    for n, edge in enumerate(bins):
+        if val < edge:
+            return n - 1
+
+dt = yaml.load( open('output/effs.yaml' ))
+
+xs = []
+ys = []
+effs = []
+
+input_effs = dt['effs']
+
+lybins = len(dt['ybins'] ) 
+lxbins = len(dt['xbins'] ) 
+
+print( len(dt['effs'] ) )
+
+for x in range ( -148, 148, 4 ):
+    for y in range ( -148, 148, 4 ):
+        ix = get_i( dt['xbins'], x )
+        iy = get_i( dt['ybins'], y )
+        index =  (lxbins-1) * iy + ix
+        xs.append( x )
+        ys.append( y )
+        effs.append( input_effs[index] )
+
+print( len(effs ) )
+
+fig = plt.figure( figsize = [8, 6] )
+fig.set_tight_layout(True)
+ax = fig.add_subplot( 111 )
+ax.grid( 'on' )
+
+plotted =  ax.scatter( xs, ys, c = effs,
+        edgecolor = 'None', cmap = 'YlGnBu', 
+          marker = 's', vmin = 0.95 )
+
+cbar = plt.colorbar( mappable = plotted )
+
+plt.savefig( 'output/effsagain.pdf', format = 'pdf', transparent = 'true' )
