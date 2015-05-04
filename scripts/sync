@@ -1,0 +1,2 @@
+#!/bin/bash
+rsync -a cern:/afs/cern.ch/user/f/fnewson/work/hnu/gopher/code/process/output/note/ data/
