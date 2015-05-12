@@ -1,0 +1,66 @@
+#!/usr/bin/env python
+import sys
+
+#point describes bottom left of square
+
+def get_corners( x, y, side ):
+    return (x,y), (x + side, y ), ( x, y + side ), ( x + side, y + side )
+
+def point_inside( corner, radius ):
+    return (corner[0]**2 + corner[1]**2) < radius**2
+
+def point_outside( corner, radius ):
+    return (corner[0]**2 + corner[1]**2) > radius**2
+
+def square_inside( xy_corners, radius ):
+    for corner in xy_corners:
+        if ( point_outside( corner, radius ) ):
+            return False
+    return True
+
+def square_outside( xy_corners, radius ):
+    for corner in xy_corners:
+        if ( point_inside( corner, radius ) ):
+            return False
+    return True
+
+
+outer_circle_radius = 95
+inner_circle_radius = 25
+square_side = 10
+
+in_acc = False
+
+regions = []
+
+min_x = 0
+max_x = 0
+
+for y in range( 110, -130, -square_side ):
+    sys.stdout.write( '{0:4} '.format( y ) )
+    min_y = y
+    max_y = y + square_side
+    for x in range( -120, 120, square_side ):
+        xy_corners = get_corners( x, y , square_side )
+        sqr_in_acc = ( square_inside( xy_corners, outer_circle_radius) 
+        and square_outside( xy_corners, inner_circle_radius) )
+
+        if sqr_in_acc:
+            sys.stdout.write( '--' )
+        else:
+            sys.stdout.write( '@@' )
+
+        if in_acc != sqr_in_acc:
+            if sqr_in_acc:
+                min_x = x
+            else:
+                max_x = x
+                regions.append( ( min_y, max_y, min_x, max_x ) )
+
+        in_acc = sqr_in_acc
+
+    sys.stdout.write( "\n" )
+
+
+for reg in regions:
+    print( '- [ {2:3}, {3:3}, {0:3}, {1:3} ]'.format( *reg ) )
