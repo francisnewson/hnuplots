@@ -56,11 +56,11 @@ TCanvas * dch_scaling( std::string name, int rebin = 10)
     //std::string data_folder = "data/2015-03-17pm/";
     //std::string output_folder = "output/2015-03-17pm/";
     
-   //std::string data_folder = "data/2015-03-26am/";
-   //std::string output_folder = "output/2015-03-26am/";
+   std::string data_folder = "data/2015-03-26am/";
+   std::string output_folder = "output/2015-03-26am/";
 
-   std::string data_folder = "data/2015-03-26pm/";
-   std::string output_folder = "output/2015-03-26pm/";
+   //std::string data_folder = "data/2015-03-26pm/";
+   //std::string output_folder = "output/2015-03-26pm/";
 
     TFile tfdata( (data_folder +"all.p5.data.nhod.v2.pos.root").c_str() ); 
     TFile tfmc( (data_folder + "all.p5.k2pig.v2.pos.root").c_str() );
@@ -96,7 +96,7 @@ TCanvas * dch_scaling( std::string name, int rebin = 10)
 
     std::vector<TH1D*> vhmc;
 
-    for ( int i = 0 ; i != 4; ++i )
+    for ( int i = 0 ; i != 1; ++i )
     {
         std::string plot_path = "select_fit_k2pi_plots/scatter" 
             + std::to_string(i) + "/" + plot_name;
