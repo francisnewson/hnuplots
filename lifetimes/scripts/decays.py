@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import numpy as np
 import matplotlib.pyplot as plt
+import sys
 
 pwr = np.power
 
@@ -75,33 +76,54 @@ def w_llnu(C_odd, C_even,  ml, u2, mn):
     Ltop = np.choose( x < 1e-2 , [ 
             np.log( (1 - 3 * pwr(x, 2) - (1 - pwr(x,2) ) * np.sqrt( 1 - 4 * pwr(x, 2 ) ) ) ),
             np.log( 2 * pwr( x , 6 ) ) ] )
+
     Lbottom = np.log( pwr(x, 2 ) * ( 1 + np.sqrt( 1 - 4 * pwr( x, 2 ) ) )  )
 
-    L = np.choose( mn > ( 2 * ml ), [0.0, Ltop - Lbottom ] )
+    L = Ltop - Lbottom 
+
+    #print( 'top: ', Ltop )
+    #print( 'bottom: ', Lbottom )
+    #print( 'L: ', L )
+
+    first_bracket =  ( (1 - 14 * pwr(x,2) - 2*pwr(x,4) - 12*pwr(x,6) ) * np.sqrt( 1 - 4 * pwr(x,2)) 
+        + 12 * pwr(x, 4) * ( pwr(x, 4) - 1 ) * L )
+
+    second_bracket = ( 
+            pwr(x, 2 )* ( 2 + 10 * pwr(x, 2 ) - 12 * pwr(x, 4 ) ) * np.sqrt( 1 - 4 * pwr(x, 2 ) )
+        + 6 * pwr(x, 4 ) * ( 1 - 2 * pwr(x, 2 ) + 2 * pwr( x, 4) * L ) ) 
+
+    #print( 'first: ', first_bracket )
+    #print( 'C_odd: ', C_odd )
+    #print( 'second: ', second_bracket )
+    #print( 'C_even: ', C_even )
 
     return np.choose( mn > (2 * ml), [ 0.0, 
-        Gf2 * pwr( mn, 5 ) / (192 * pwr(np.pi, 3)) * u2 * (
-        C_odd *  (
-        (1 - 14 * pwr(x,2) - 2*pwr(x,4) - 12*pwr(x,6) ) * np.sqrt( 1 - 4 * pwr(x,2)) 
-        + 12 * pwr(x, 4) * ( pwr(x, 4) - 1 ) * L )
-        + 4 * C_even * (  
-        pwr(x, 2 )* ( 2 + 10 * pwr(x, 2 ) - 12 * pwr(x, 4 ) ) * np.sqrt( 1 - 4 * pwr(x, 2 ) )
-        + 6 * pwr(x, 4 ) * ( 1 - 2 * pwr(x, 2 ) + 2 * pwr( x, 4) * L ) ) 
-        )  ] )
+        Gf2 * pwr( mn, 5 ) / (192 * pwr(np.pi, 3)) * u2 * ( 
+            C_odd * first_bracket + 4 * C_even *  second_bracket)  ] ) 
 
 hnu_masses = np.linspace( 0.01, 0.5, 499 )
 test_u2 = 1e-5
+
+#print( C1, C2, C3, C4 )
+#print( 'muons' )
+#print ( w_llnu( C1, C2, mmu, test_u2, 0.3 ) )
+#print ( w_llnu( C3, C4, mmu, test_u2, 0.3 ) )
+#print( 'electrons' )
+#print ( w_llnu( C1, C2, me, test_u2, 0.3 ) )
+#print ( w_llnu( C3, C4, me, test_u2, 0.3 ) )
 
 np_w_pi0_nu = 3 * w_H_nu( mpi0, f_pi2, test_u2, hnu_masses )
 np_w_pip_e = w_h_l( mpip, me, f_pi2, Vud, test_u2, hnu_masses )
 np_w_pip_mu = w_h_l( mpip, mmu, f_pi2, Vud, test_u2, hnu_masses )
 np_w_nununu = w_nununu( test_u2, hnu_masses )
 
-np_w_nuemu = w_lknu( me, mmu, test_u2, hnu_masses )
+np_w_nuemu = 2 * w_lknu( me, mmu, test_u2, hnu_masses )
 np_w_nue_ee = w_llnu( C3, C4, me, test_u2, hnu_masses )
 np_w_nudiff_ee = 2 * w_llnu( C1, C2, me, test_u2, hnu_masses )
 np_w_numu_mumu = w_llnu( C3, C4, mmu, test_u2, hnu_masses )
 np_w_nudiff_mumu = 2 * w_llnu( C1, C2, mmu, test_u2, hnu_masses )
+
+
 
 total = (np_w_pi0_nu + np_w_pip_e + np_w_pip_mu + np_w_nununu + 
         np_w_nuemu + np_w_nue_ee + np_w_nudiff_ee + np_w_numu_mumu + np_w_nudiff_mumu )
@@ -112,29 +134,41 @@ fig,ax = plt.subplots(figsize = [8,6]  )
 ax.set_yscale('log')
 ax.grid( True )
 
-ax.plot( hnu_masses, np_w_pi0_nu, '--', lw = 2, label = r'$\pi^0 \nu_{\mu, \nu, \tau}$' )
-ax.plot( hnu_masses, np_w_pip_e,  '-.', lw = 2, label = r'$\pi^+ e$' )
-ax.plot( hnu_masses, np_w_pip_mu,  '-', lw = 2, label = r'$\pi^+ \mu$' )
-ax.plot( hnu_masses, np_w_nununu,  ':', lw = 2, label = r'$\nu \nu \nu$' )
-ax.plot( hnu_masses, np_w_nuemu,  '-', label = r'$\nu e \mu$' )
-ax.plot( hnu_masses, np_w_nue_ee,  '-', label = r'$\nu_e e e$' )
-ax.plot( hnu_masses, np_w_nudiff_ee,  '-', label = r'$\nu_{l \neq e} e e$' )
-ax.plot( hnu_masses, np_w_numu_mumu,  '-', label = r'$\nu_\mu \mu \mu$' )
-ax.plot( hnu_masses, np_w_nudiff_mumu,  '-', label = r'$\nu_{l \neq \mu} \mu \mu$' )
 ax.plot( hnu_masses, total,  'k-', lw = 2, label = r'$\mathrm{Total}$' )
+
+line,  = ax.plot( hnu_masses, np_w_pi0_nu, 'k-', lw = 2, label = r'$\pi^0 \nu_{\mu, \nu, \tau}$' )
+line.set_dashes( [8, 4, 2, 4, 2, 4] )
+
+line,  = ax.plot( hnu_masses, np_w_pip_e,  'k-', lw = 2, label = r'$\pi^+ e$' )
+line.set_dashes( [8, 4] )
+
+line,  = ax.plot( hnu_masses, np_w_pip_mu, 'k-', lw = 2, label = r'$\pi^+ \mu$' )
+line.set_dashes( [2,2] )
+
+line,  = ax.plot( hnu_masses, np_w_nununu, 'k-', lw = 2, label = r'$\nu \nu \nu$' )
+line.set_dashes( [8,4, 8, 4, 2, 4] )
+
+
+ax.plot( hnu_masses, np_w_nuemu,       '-', color = '#66c2a5',  label = r'$\nu e \mu$' )
+ax.plot( hnu_masses, np_w_nue_ee,      '-', color = '#fc8d62',  label = r'$\nu_e e e$' )
+ax.plot( hnu_masses, np_w_nudiff_ee,   '-', color = '#8da0cb',  label = r'$\nu_{l \neq e} e e$' )
+ax.plot( hnu_masses, np_w_numu_mumu,   '-', color = '#e78ac3',  label = r'$\nu_\mu \mu \mu$' )
+ax.plot( hnu_masses, np_w_nudiff_mumu, '-', color = '#a6d854',  label = r'$\nu_{l \neq \mu} \mu \mu$' )
 
 ax.set_ylim( 1e-24, 1e-17 )
 ax.set_xlim( 0.1, 0.5 )
 ax.set_xlabel( r'Neutrino mass ($\unit[]{GeV/c^2}$)' )
-ax.set_ylabel( r'Partial width ($GeV$)' )
+ax.set_ylabel( r'Partial width ($\unit[]{GeV}$)' )
 
 
 lines, labels = ax.get_legend_handles_labels()
-ax.legend( lines, labels, loc = 'upper left', ncol = 2 )
+ax.legend( lines, labels, loc = 'upper left', ncol = 2, handlelength = 5 )
 
 plt.savefig( 'output/widths.pdf', format = 'pdf', transparent = 'true' )
 
 ax.cla()
+
+print( 'Done widths.pdf' )
 
 
 ax.set_yscale('log')
@@ -144,5 +178,7 @@ ax.set_xlim( 0.1, 0.5 )
 ax.set_xlabel( r'Neutrino mass ($\unit[]{GeV/c^2}$)' )
 ax.set_ylabel( r'Lifetime (s)' )
 
-ax.plot( hnu_masses, lifetime )
-plt.savefig( 'output/lifetime.pdf', format = 'pdf', transparent = 'true' )
+ax.plot( hnu_masses, lifetime, '-k' )
+plt.savefig( 'output/lifetime.pdf',  format = 'pdf', transparent = 'true' )
+
+print( 'Done lifetime.pdf' )
