@@ -1,0 +1,55 @@
+#!/usr/bin/env python
+import pandas as pd
+
+def chunks(l, n):
+    """ Yield successive n-sized chunks from l.
+    """
+    for i in range(0, len(l), n):
+        yield l[i:i+n]
+
+fdata = []
+with open( 'data/magbluetube_2003' ) as f:
+    for line in f:
+        fdata.extend( [float(x) for x in line.split()] )
+
+header = fdata[:379]
+data = fdata[379:]
+
+print ( len( header ) )
+print ( len( data ) )
+
+nhead = int( header.pop(0) )
+nzblue = nhead
+
+header_regions = list(chunks( header, 7 ))
+
+headers = pd.DataFrame( header_regions, 
+columns = ['nxblue', 'xmin_blue', 'stepx_blue', 'nyblue', 'ymin_blue', 'stepy_blue', 'z_blue' ] )
+headers['xtra'] = 2 * headers['nxblue']*headers['nyblue']
+headers['iadbx_blue'] = ( [0] + list(headers['xtra'].cumsum()[:-1].values ))
+
+print( len(headers ))
+print( headers )
+
+x = 1
+y = 44
+z = 500
+
+lower = headers[ headers['z_blue'] < z ].tail(1).squeeze()
+upper = headers[ headers['z_blue'] > z ].head(1).squeeze()
+
+print ( lower )
+print ( upper )
+
+imap = int( (x - lower['xmin_blue'])/lower['stepx_blue']  )
+jmap = int( (y - lower['ymin_blue'])/lower['stepy_blue']  )
+
+k1 = jmap*lower['nxblue'] + imap + lower['iadbx_blue']
+k2 = k1 + 1
+k3 = k1 + lower['nxblue']
+k4 = k3 + 1
+
+ndim = lower['nxblue']* lower['nyblue']
+
+print( k1, k2, k3, k4 )
+print( data[int(k1)], data[int(k1+ndim)] )
