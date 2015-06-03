@@ -1,0 +1,13 @@
+lines.linewidth : 2
+xtick.labelsize : 14
+font.size : 14
+font.family         : serif
+font.style          : normal
+font.variant        : normal
+font.weight         : medium
+font.stretch        : normal
+axes.labelsize      : large
+font.serif          : Charter
+text.usetex         : true
+text.latex.preamble: \usepackage[bitstream-charter]{mathdesign},\usepackage{units}
+legend.fontsize     : 14

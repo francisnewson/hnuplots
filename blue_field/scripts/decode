@@ -1,11 +1,62 @@
 #!/usr/bin/env python
 import pandas as pd
+import matplotlib.pyplot as plt
+import progressbar
+
+pd.set_option('display.width', 1000)
+pd.set_option('display.max_columns', 500)
 
 def chunks(l, n):
     """ Yield successive n-sized chunks from l.
     """
     for i in range(0, len(l), n):
         yield l[i:i+n]
+
+def field_at_z( x, y, header, bfdata ):
+
+    imap =  (x - header['xmin_blue'])/header['stepx_blue']
+    jmap =  (y - header['ymin_blue'])/header['stepy_blue']
+
+    imap = int( imap )
+    jmap = int( jmap )
+
+    k1 = jmap*header['nxblue'] + imap + header['iadbx_blue']
+    k2 = k1 + 1
+    k3 = k1 + header['nxblue']
+    k4 = k3 + 1
+
+    diffx = ( x - ( header['xmin_blue']+ header['stepx_blue']*imap ) ) / header['stepx_blue']
+    diffy = ( y - ( header['ymin_blue']+ header['stepy_blue']*jmap ) ) / header['stepy_blue']
+
+    co22 = diffx * diffy
+    co11 = 1 - diffx - diffy + co22
+    co21 = diffx - co22
+    co12 = diffy - co22
+
+    ndim = int (header['nxblue']* header['nyblue'] )
+
+    xk = list( map( int, (k1, k2, k3, k4 ) ) )
+    yk = [ k + ndim for k in xk ]
+
+    fx = co11*bfdata[xk[0]] + co21*bfdata[xk[1]] + co12*bfdata[xk[2]] + co22*bfdata[xk[3]]
+    fy = co11*bfdata[yk[0]] + co21*bfdata[yk[1]] + co12*bfdata[yk[2]] + co22*bfdata[yk[3]]
+
+    return fx/1000.0, fy/1000.0
+
+def get_field( x, y, z ,headers, bfdata ):
+    up = headers[ headers['z_blue'] <= z ].tail(1).squeeze().copy()
+    dn = headers[ headers['z_blue'] > z ].head(1).squeeze().copy()
+
+    up_fx, up_fy = field_at_z( x, y, up, bfdata )
+    dn_fx, dn_fy = field_at_z( x, y, dn, bfdata )
+
+    diff_z = z - up['z_blue']
+    diff_frac = diff_z /  ( dn['z_blue'] - up['z_blue'] )
+
+    fx = up_fx + diff_frac * ( dn_fx - up_fx )
+    fy = up_fy + diff_frac * ( dn_fy - up_fy )
+
+    return fx, fy
 
 fdata = []
 with open( 'data/magbluetube_2003' ) as f:
@@ -25,31 +76,79 @@ header_regions = list(chunks( header, 7 ))
 
 headers = pd.DataFrame( header_regions, 
 columns = ['nxblue', 'xmin_blue', 'stepx_blue', 'nyblue', 'ymin_blue', 'stepy_blue', 'z_blue' ] )
+headers['z_blue'] =  12000  - headers['z_blue'] 
+headers.sort( 'z_blue', inplace = True )
 headers['xtra'] = 2 * headers['nxblue']*headers['nyblue']
 headers['iadbx_blue'] = ( [0] + list(headers['xtra'].cumsum()[:-1].values ))
 
-print( len(headers ))
+#print( len(headers ))
 print( headers )
 
-x = 1
-y = 44
-z = 500
+raw_field_data = []
 
-lower = headers[ headers['z_blue'] < z ].tail(1).squeeze()
-upper = headers[ headers['z_blue'] > z ].head(1).squeeze()
 
-print ( lower )
-print ( upper )
+with progressbar.ProgressBar() as pb:
+    for z in pb( headers['z_blue'].values[:-1] ):
+    #for z in pb( range( 1000, 11000, 50) ):
+        fx, fy = get_field( 0, 0, z, headers, data )
+        raw_field_data.append( [0, 0, z, fx, fy] )
 
-imap = int( (x - lower['xmin_blue'])/lower['stepx_blue']  )
-jmap = int( (y - lower['ymin_blue'])/lower['stepy_blue']  )
+magnet_field_data = []
+with progressbar.ProgressBar() as pb:
+    for x in pb( range( -40, 45, 5 ) ):
+        for y in  range( -40, 45, 5 ) :
+            fx, fy = get_field( x, y, 10896.80, headers, data )
 
-k1 = jmap*lower['nxblue'] + imap + lower['iadbx_blue']
-k2 = k1 + 1
-k3 = k1 + lower['nxblue']
-k4 = k3 + 1
+field_data = pd.DataFrame( raw_field_data, columns = ['x', 'y', 'z', 'fx', 'fy' ] )
+print ( field_data )
 
-ndim = lower['nxblue']* lower['nyblue']
+fig = plt.figure( figsize = [12, 6] )
+fig.set_tight_layout(True)
+ax = fig.add_subplot( 111 )
+ax.grid( True )
 
-print( k1, k2, k3, k4 )
-print( data[int(k1)], data[int(k1+ndim)] )
+#field_y0 = field_data[field_data['y'] == 0 ]
+#plotted = ax.scatter( field_y0['z'], field_y0['x'], c = field_y0['fx'], edgecolor = 'None', marker = 's' )
+#cbar = plt.colorbar( mappable = plotted )
+#plt.savefig( 'output/y0_zx_fx.pdf', format = 'pdf', transparent = 'true' )
+#cbar.remove()
+#ax.cla()
+#
+#ax.grid( True )
+#field_x0 = field_data[field_data['x'] == 0 ]
+#plotted = ax.scatter( field_x0['z'], field_x0['y'], c = field_y0['fy'], edgecolor = 'None', marker = 's' )
+#cbar = plt.colorbar( mappable = plotted )
+#plt.savefig( 'output/x0_zy_fy.pdf', format = 'pdf', transparent = 'true' )
+#cbar.remove()
+#ax.cla()
+
+field_00 = field_data[ (field_data['x'] == 0) & (field_data['y'] == 0) ]
+
+
+ax.grid(True )
+ax.set_ylabel( 'Field (mT)' )
+ax.set_xlabel( 'z (cm)' )
+ax.set_title( 'x component of Blue Tube B field on z-axis' )
+plotted = ax.plot( field_00['z'], field_00['fx'], 'k-o', mec = 'None', marker = 's', markersize = 2 )
+plt.savefig( 'output/x0y0_fx.pdf', format = 'pdf', transparent = 'true' )
+ax.cla()
+
+ax.grid(True )
+ax.set_ylabel( 'Field (mT)' )
+ax.set_xlabel( 'z (cm)' )
+ax.set_title( 'y component of Blue Tube B field on z-axis' )
+plotted = ax.plot( field_00['z'], field_00['fy'], 'b-s', mec = 'None',  markersize = 2 )
+plt.savefig( 'output/x0y0_fy.pdf', format = 'pdf', transparent = 'true' )
+ax.cla()
+
+ax.set_ylabel( 'Field (mT)' )
+ax.set_xlabel( 'z (cm)' )
+ax.set_title( 'Blue Tube B field on z-axis' )
+ax.grid(True )
+ax.set_ylim( -0.25, 0.25 )
+plotted = ax.plot( field_00['z'], field_00['fy'], 'b-s', mec = 'None',  markersize = 4, label = r'$B_y$' )
+plotted = ax.plot( field_00['z'], field_00['fx'], 'g-x', mec = 'g',  markersize = 4, label = r'$B_x$' )
+handles, labels = ax.get_legend_handles_labels()
+plt.legend( reversed(handles), reversed(labels), loc = 'upper right' )
+plt.savefig( 'output/x0y0_fxfy.pdf', format = 'pdf', transparent = 'true' )
+ax.cla()
