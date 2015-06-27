@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+import pandas as pd
+import sys
+
+dt = pd.read_csv( "data/all_bursts.txt", delim_whitespace = True )
+dt.sort( ["run", "burst_time"], inplace = True )
+
+bad_bursts = dt[ dt['up'] < 0.92 ][['run','burst_time']]
+
+print( len(bad_bursts))
+
+print( bad_bursts )
+
+with open( 'output/bad_bursts.txt', 'w' ,encoding = 'utf-8' ) as f:
+    for b in bad_bursts.iterrows():
+        f.write ( '{0} {1}\n'.format(b[1].run, b[1].burst_time ) )

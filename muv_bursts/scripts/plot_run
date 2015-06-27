@@ -1,0 +1,44 @@
+#!/usr/bin/env python
+import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
+import pandas as pd
+import numpy as np
+
+
+def plot_run( ax, runs, run ):
+    ax.set_xlabel( 'Burst timestamp (unix time)' )
+    ax.set_ylabel( 'Muon detection efficiency' )
+    ax.ticklabel_format(useOffset=False)
+    ax.grid( 'on' )
+
+    ax.get_xaxis().set_major_formatter(
+            ticker.FuncFormatter(lambda x, p: '{0}'.format( int(x) ) ) )
+
+    my_run = runs[ runs['run'] == run ]
+
+    print( 'Plotting run {0}. Bursts {1} - {2}'.format( run , 'xxx', 'yyy' ) )
+
+    ax.errorbar( my_run['burst_time'], my_run['eff'], yerr = [my_run['eff'] - my_run['down'], my_run['up'] - my_run['eff']],
+             fmt = 'o', color = 'k', marker = 's', markersize = 2,
+             ecolor='k', lw=1, alpha = 0.2, capthick= 1, rasterized = True)
+
+
+dt = pd.read_csv( "data/all_bursts.txt", delim_whitespace = True )
+dt.sort( ["run", "burst_time"], inplace = True )
+
+
+fig = plt.figure( figsize = [15, 5] )
+fig.set_tight_layout(True)
+ax = fig.add_subplot( 111 )
+
+plot_run( ax, dt, 20412 )
+plt.savefig( 'output/run{0}.pdf'.format( 20412 ), format = 'pdf', transparent = 'true' )
+ax.cla()
+
+plot_run( ax, dt, 20460 )
+plt.savefig( 'output/run{0}.pdf'.format( 20460 ), format = 'pdf', transparent = 'true' )
+ax.cla()
+
+ax.set_xlim( 1188935000, 1188985000 )
+plot_run( ax, dt, 20438 )
+plt.savefig( 'output/run{0}.pdf'.format( 20438 ), format = 'pdf', transparent = 'true' )
