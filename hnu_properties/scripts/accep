@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+import matplotlib.pyplot as plt
+import pandas as pd
+
+sig = pd.read_csv( 'data/signal_shapes.dat' , delim_whitespace = True )
+loose_sig = pd.read_csv( 'data/loose_signal_shapes.dat' , delim_whitespace = True )
+
+fig = plt.figure( figsize = [8, 6] )
+fig.set_tight_layout(True)
+ax = fig.add_subplot( 111 )
+
+ax.grid( 'on' )
+ax.plot( sig['mass'], sig['width_acc'] )
+ax.plot( loose_sig['mass'], loose_sig['width_acc'] )
+
+plt.savefig( 'output/signal_acc.pdf', format = 'pdf', transparent = True )

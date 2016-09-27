@@ -1,0 +1,43 @@
+#!/usr/bin/env python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+dn_neg = pd.read_csv( 'data/scales_2015_09-14/neg_lower_zt.dat', delim_whitespace = True , skiprows = 1 )
+dn_pos = pd.read_csv( 'data/scales_2015_09-14/pos_lower_zt.dat', delim_whitespace = True , skiprows = 1 )
+up_neg = pd.read_csv( 'data/scales_2015_09-14/neg_upper_zt.dat', delim_whitespace = True , skiprows = 1 )
+up_pos = pd.read_csv( 'data/scales_2015_09-14/pos_upper_zt.dat', delim_whitespace = True , skiprows = 1 )
+
+pd.set_option('display.max_columns', 500)
+pd.set_option('display.width', 1000)
+
+#print( dn_neg )
+
+fig = plt.figure( figsize = [6,6] )
+ax = fig.add_subplot( 111 )
+
+for name, dt in zip( ['dn_neg', 'dn_pos'], [dn_neg, dn_pos] ):
+    ax.cla()
+    ax.grid( 'on' )
+    ax.set_title( name )
+    ax.set_title( "" )
+    ax.errorbar( dt['shift'] , dt['fitscale'], yerr = dt['fitscalerr'], color = 'k' )
+    ax.set_xlabel( 'Delta z (cm)' )
+    ax.set_ylabel( r'Measured halo scale factor' )
+    plt.savefig( 'output/scaling/{0}.pdf'.format( name ) , format = 'pdf', transparent = True )
+    print( name )
+    print( dt )
+
+for name, dt in zip( ['up_neg', 'up_pos'], [up_neg, up_pos] ) :
+    ax.cla()
+    ax.set_title( name )
+    ax.set_title( "" )
+    ax.set_xlim( -0.0001* 10, 0.0001 * 30 )
+    plt.xticks( [-0.001, 0.0, +0.001, +0.002, +0.003] )
+    ax.set_ylim( 2, 6 )
+    ax.grid( 'on' )
+    ax.errorbar( 0.0001 * dt['shift'] , dt['scale'], yerr = dt['err'], color = 'k' )
+    ax.set_xlabel( r'Delta $\theta$ (rad)' )
+    ax.set_ylabel( r'Measured halo scale factor' )
+    plt.savefig( 'output/scaling/{0}.pdf'.format( name ) , format = 'pdf', transparent = True )
+    print( name )
+    print( dt )

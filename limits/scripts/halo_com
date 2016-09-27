@@ -1,0 +1,32 @@
+#!/usr/bin/env python
+import matplotlib.pyplot as plt
+import matplotlib as mpl
+import numpy as np
+import pandas
+from mpl_toolkits.axes_grid1.parasite_axes import SubplotHost
+
+dt_bad = pandas.read_csv( 'data/bad_lim.txt', delim_whitespace = True, encoding = 'utf-8' )
+dt_good = pandas.read_csv( 'data/good_lim.txt', delim_whitespace = True, encoding = 'utf-8' )
+dt_med = pandas.read_csv( 'data/med_lim.txt', delim_whitespace = True, encoding = 'utf-8' )
+
+#intialize
+fig = plt.figure( figsize = [10,8] )
+ax = SubplotHost( fig, 1, 1, 1, )
+fig.add_subplot(ax)
+
+ax.set_xlim(200, 400 )
+ax.set_ylim( 1e-6, 1e-4 )
+ax.grid( True)
+ax.set_yscale('log')
+
+ax.set_xlabel( r'Heavy neutrino mass MeV/$c^2$' )
+ax.set_ylabel( r'Limit on $|U_{\mu h}|^2$' )
+
+ax.plot( dt_bad['mass'], dt_bad['ul_u2'], '-', color = 'DarkRed', label = '100\% halo err' )
+ax.plot( dt_med['mass'], dt_med['ul_u2'], '-', color = 'DarkOrange', label = ' 50\% halo err' )
+ax.plot( dt_good['mass'], dt_good['ul_u2'], '-', color = 'DarkGreen', label = ' 10\% halo err' )
+
+lines, labels = ax.get_legend_handles_labels()
+leg = plt.legend( lines, labels, loc = 'upper left' )
+
+plt.savefig( 'output/ul_halo_comp.pdf', format = 'pdf' , transparent = True )

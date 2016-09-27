@@ -8,7 +8,7 @@ def f(x0, x):
 def g(x0, x):
     return np.exp( -np.power( x / x0, 2 ) ) 
 
-x = np.arange( 0, 10, 0.01 )
+x = np.arange( -10, 10, 0.01 )
 yf= 0.005*f(3, x)
 yg = g( 1.4, x )
 yt = yf + yg
@@ -19,13 +19,13 @@ fig = plt.figure( figsize = [6, 4] )
 ax = fig.add_subplot( 111 )
 ax.grid( 'on' )
 ax.set_xlabel( r'$\zeta$')
-ax.set_ylabel( r'$P(\zeta)$')
+ax.set_ylabel( r'pdf (logarithmic scale)')
 ax.set_yscale( 'log' )
-ax.set_ylim( 1e-5, 1 )
+ax.set_ylim( 1e-5, 100 )
 
-ax.plot( x, yt, 'k-', label = r'Total distribution' )
-ax.plot( x, yf, 'k--', label = r'Extra scattering' )
-ax.plot( x, yg, 'k-.', label = r'Gaussian distribution' )
+ax.plot( x, yt, 'k-', label = r'Total distribution (Original + Extra)' )
+ax.plot( x, yf, 'k--', label = r'Extra scattering $P(\zeta)$' )
+ax.plot( x, yg, 'k-.', label = r'Original (Gaussian) distribution' )
 
 plt.setp(ax.get_yticklabels(), visible=False)
 

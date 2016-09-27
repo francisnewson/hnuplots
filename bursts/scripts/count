@@ -1,0 +1,47 @@
+#!/usr/bin/env python
+import pandas as pd
+import numpy as np
+
+print ( 'Hello, world!')
+
+def extract_bad_bursts( burst_list, bad_ranges ):
+    bad_b = []
+    for i,bad_range in bad_ranges.iterrows():
+        run = bad_range['start_run'].squeeze()
+        my_run = burst_list[ burst_list['run'] == run ].copy()
+        my_bursts = my_run[ 
+                (my_run['burst'] >= bad_range['start_burst'])
+                & (my_run['burst'] <= bad_range['end_burst'])
+                ]
+        bad_b.extend( zip( my_bursts[ 'run'].tolist(), my_bursts[ 'burst'].tolist()  ) )
+
+    return bad_b
+
+burst_list = pd.read_csv( 'data/p5.bursts.list', delim_whitespace = True,  encoding="utf-8-sig" )
+cols = burst_list.columns.values
+cols[0]  = 'run'
+cols[1] = 'burst'
+burst_list.colums = cols
+
+test = burst_list.copy()
+
+burst_list = burst_list[ burst_list['Phys'] != 1 ]
+#print( burst_list[burst_list.columns[0] ] )
+
+bad_bursts = pd.read_csv( 'data/bad_muv_bursts_95_90.dat', delim_whitespace = True,
+        header = None, names =  ['run', 'burst' ] )
+
+bad_ranges = pd.read_csv( 'data/bad_muv_burst_ranges.dat', delim_whitespace = True,
+        header = None, names  = ['start_run', 'start_burst', 'end_run', 'end_burst' ] )
+
+res = extract_bad_bursts( burst_list, bad_ranges )
+bad_range_bursts = pd.DataFrame( res, columns = ['run', 'burst'] )
+print( len(bad_range_bursts ) )
+print( len(bad_bursts ) ) 
+
+all_bad = pd.merge( bad_range_bursts, bad_bursts, how = 'outer', on = ['run', 'burst'] )
+print( len( all_bad ) )
+
+print( test.groupby('run').size().sum() )
+
+print( all_bad.groupby('run').size() )

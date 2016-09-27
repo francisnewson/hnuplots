@@ -76,7 +76,8 @@ header_regions = list(chunks( header, 7 ))
 
 headers = pd.DataFrame( header_regions, 
 columns = ['nxblue', 'xmin_blue', 'stepx_blue', 'nyblue', 'ymin_blue', 'stepy_blue', 'z_blue' ] )
-headers['z_blue'] =  12000  - headers['z_blue'] 
+#headers['z_blue'] =  12000  - headers['z_blue'] 
+#headers['z_blue'] =  headers['z_blue'] - 9531
 headers.sort( 'z_blue', inplace = True )
 headers['xtra'] = 2 * headers['nxblue']*headers['nyblue']
 headers['iadbx_blue'] = ( [0] + list(headers['xtra'].cumsum()[:-1].values ))
@@ -129,7 +130,7 @@ ax.grid(True )
 ax.set_ylabel( 'Field (mT)' )
 ax.set_xlabel( 'z (cm)' )
 ax.set_title( 'x component of Blue Tube B field on z-axis' )
-plotted = ax.plot( field_00['z'], field_00['fx'], 'k-o', mec = 'None', marker = 's', markersize = 2 )
+plotted = ax.plot( 9531 - field_00['z'], field_00['fx'], 'k-o', mec = 'None', marker = 's', markersize = 2 )
 plt.savefig( 'output/x0y0_fx.pdf', format = 'pdf', transparent = 'true' )
 ax.cla()
 
@@ -137,7 +138,7 @@ ax.grid(True )
 ax.set_ylabel( 'Field (mT)' )
 ax.set_xlabel( 'z (cm)' )
 ax.set_title( 'y component of Blue Tube B field on z-axis' )
-plotted = ax.plot( field_00['z'], field_00['fy'], 'b-s', mec = 'None',  markersize = 2 )
+plotted = ax.plot( 9531 - field_00['z'], field_00['fy'], 'b-s', mec = 'None',  markersize = 2 )
 plt.savefig( 'output/x0y0_fy.pdf', format = 'pdf', transparent = 'true' )
 ax.cla()
 
@@ -146,8 +147,8 @@ ax.set_xlabel( 'z (cm)' )
 ax.set_title( 'Blue Tube B field on z-axis' )
 ax.grid(True )
 ax.set_ylim( -0.25, 0.25 )
-plotted = ax.plot( field_00['z'], field_00['fy'], 'b-s', mec = 'None',  markersize = 4, label = r'$B_y$' )
-plotted = ax.plot( field_00['z'], field_00['fx'], 'g-x', mec = 'g',  markersize = 4, label = r'$B_x$' )
+plotted = ax.plot( 9531 - field_00['z'], field_00['fy'], 'b-s', mec = 'None',  markersize = 4, label = r'$B_y$' )
+plotted = ax.plot( 9531 - field_00['z'], field_00['fx'], 'g-x', mec = 'g',  markersize = 4, label = r'$B_x$' )
 handles, labels = ax.get_legend_handles_labels()
 plt.legend( reversed(handles), reversed(labels), loc = 'upper right' )
 plt.savefig( 'output/x0y0_fxfy.pdf', format = 'pdf', transparent = 'true' )

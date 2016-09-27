@@ -9,5 +9,6 @@ font.stretch        : normal
 axes.labelsize      : large
 font.serif          : Charter
 text.usetex         : true
+axes.color_cycle    : 1f78b4, 33a02c, fb9a99, e31a1c, fdbf6f, ff7f00, cab2d6, 6a3d9a, a6cee3, b2df8a 
 text.latex.preamble: \usepackage[bitstream-charter]{mathdesign},\usepackage{units}
 legend.fontsize     : 16

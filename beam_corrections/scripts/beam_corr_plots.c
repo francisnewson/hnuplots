@@ -1,3 +1,21 @@
+TH1 * get_hrat_uw( TFile& tf )
+{
+    TH1D * hdt = static_cast<TH1D*>(get_hist( tf, "loose_lkr_m2m/hdata" ) );
+    TH1D * hbg = static_cast<TH1D*>(get_hist( tf, "loose_lkr_m2m/hbg" ) ) ;
+
+    double dtw = integral( *hdt, -0.0055, 0.0055 );
+    double bgw = integral( *hbg, -0.0055, 0.0055 );
+
+    double rat = dtw/ bgw;
+    std::cout << "Rat: " << rat << std::endl;
+    hbg->Sumw2();
+    hdt->Sumw2();
+    hbg->Scale( rat );
+    hdt->Divide( hbg );
+    return hdt;
+}
+
+
 void do_plots()
 {
     gStyle->SetOptStat(0);
@@ -6,7 +24,8 @@ void do_plots()
     TFile tf_uw( "data/st_uw_shuffle.root" );
     TFile tf_wgt( "data/st_weighted_shuffle.root" );
 
-    TH1 * hrat_uw = get_hist( tf_uw, "loose_lkr_m2m/hratio" );
+    //TH1 * hrat_uw = get_hist( tf_uw, "loose_lkr_m2m/hratio" );
+    TH1 * hrat_uw = get_hrat_uw( tf_uw );
     TH1 * hrat_wgt = get_hist( tf_wgt, "loose_lkr_m2m/hratio" );
 
     TCanvas c( "c", "c", 400, 400 );
@@ -90,4 +109,9 @@ void do_plots()
 
     legd.Draw("same");
     d.SaveAs( "output/wgt_comp.pdf" , "pdf" );
+}
+
+void beam_corr_plots()
+{
+    do_plots();
 }

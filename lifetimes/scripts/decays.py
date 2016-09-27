@@ -104,10 +104,10 @@ def w_llnu(C_odd, C_even,  ml, u2, mn):
 hnu_masses = np.linspace( 0.01, 0.5, 499 )
 test_u2 = 1e-5
 
-#print( C1, C2, C3, C4 )
-#print( 'muons' )
-#print ( w_llnu( C1, C2, mmu, test_u2, 0.3 ) )
-#print ( w_llnu( C3, C4, mmu, test_u2, 0.3 ) )
+print(stw2,  C1, C2, C3, C4 )
+print( 'muons' )
+print ( w_llnu( C1, C2, mmu, test_u2, 0.3 ) )
+print ( w_llnu( C3, C4, mmu, test_u2, 0.3 ) )
 #print( 'electrons' )
 #print ( w_llnu( C1, C2, me, test_u2, 0.3 ) )
 #print ( w_llnu( C3, C4, me, test_u2, 0.3 ) )

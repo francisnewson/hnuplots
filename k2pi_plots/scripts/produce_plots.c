@@ -26,13 +26,13 @@ void run()
 
 
         TList * hlist = m2pip_lkr_stack->GetHists();
-        TLegend legd(0.70, 0.57, 0.87, 0.87 );
+        TLegend legd(0.60, 0.57, 0.87, 0.87 );
         legd.SetTextFont( 133 );
         legd.SetTextSize( 14 );
-        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "k2pig_pos") ) , "K_{2#pi}", "f"  );
-        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "ke3_pos") ) , "K_{e3}", "f"  );
-        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "k3pi0_pos") ) , "K_{3#pi0}", "f"  );
-        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "km3_pos") ) , "K_{#mu3}", "f"  );
+        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "k2pig_pos") ) , "K #rightarrow #pi^{+} #pi^{0}", "f"  );
+        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "ke3_pos") ) , "K #rightarrow e^{+} #pi^{0} #nu_{e}", "f"  );
+        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "k3pi0_pos") ) , "K #rightarrow #pi^{+} #pi^{0} #pi^{0}", "f"  );
+        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "km3_pos") ) , "K #rightarrow #mu^{+} #pi^{0} #nu_{#mu}", "f"  );
 
         legd.Draw("same");
 
@@ -59,13 +59,13 @@ void run()
         c.SetLogy();
 
         TList * hlist = chi2_stack->GetHists();
-        TLegend legd(0.70, 0.57, 0.87, 0.87 );
+        TLegend legd(0.60, 0.67, 0.87, 0.87 );
         legd.SetTextFont( 133 );
         legd.SetTextSize( 14 );
-        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "k2pig_pos") ) , "K_{2#pi}", "f"  );
-        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "ke3_pos") ) , "K_{e3}", "f"  );
-        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "k3pi0_pos") ) , "K_{3#pi0}", "f"  );
-        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "km3_pos") ) , "K_{#mu3}", "f"  );
+        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "k2pig_pos") ) , "K #rightarrow #pi^{+} #pi^{0}", "f"  );
+        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "ke3_pos") ) , "K #rightarrow e^{+} #pi^{0} #nu_{e}", "f"  );
+        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "k3pi0_pos") ) , "K #rightarrow #pi^{+} #pi^{0} #pi^{0}", "f"  );
+        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "km3_pos") ) , "K #rightarrow #mu^{+} #pi^{0} #nu_{#mu}", "f"  );
 
         legd.Draw("same");
 
@@ -89,7 +89,7 @@ void run()
         TCanvas c( "c", "c", 400, 400 );
 
         eop_stack->Draw();
-        eop_stack->GetXaxis()->SetTitle( "E/p(#pi^{+})");
+        eop_stack->GetXaxis()->SetTitle( "E/(|#bf{p}|/c) for track associated to #pi^{+}");
         eop_stack->GetXaxis()->SetNdivisions( 508 , kTRUE);
         eop_stack->SetMaximum( 3e5 );
         eop_stack->SetMinimum( 10 );
@@ -100,12 +100,12 @@ void run()
         c.SetLogy();
 
         TList * hlist = eop_stack->GetHists();
-        TLegend legd(0.70, 0.57, 0.87, 0.87 );
+        TLegend legd(0.60, 0.67, 0.87, 0.87 );
         legd.SetTextFont( 133 );
         legd.SetTextSize( 14 );
-        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "k2pig_pos") ) , "K_{2#pi}", "f"  );
-        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "ke3_pos") ) , "K_{e3}", "f"  );
-        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "k3pi0_pos") ) , "K_{3#pi0}", "f"  );
+        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "k2pig_pos") ) , "K #rightarrow #pi^{+} #pi^{0}", "f"  );
+        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "ke3_pos") ) , "K #rightarrow e^{+} #pi^{0} #nu_{e}", "f"  );
+        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "k3pi0_pos") ) , "K #rightarrow #pi^{+} #pi^{0} #pi^{0}", "f"  );
 
         legd.Draw("same");
 
@@ -147,7 +147,8 @@ void run()
         }
 
         m2pi0_stack->Draw();
-        m2pi0_stack->GetXaxis()->SetTitle( "Reconstruced m^{2}_{#pi^{0}} (GeV^{2}/c^{4})");
+        m2pi0_stack->GetXaxis()->SetTitle( "Reconstructed m^{2}_{miss} - m^{2}_{#pi^{0}} (GeV^{2}/c^{4})");
+        m2pi0_stack->GetXaxis()->SetTitleOffset(1.2);
         m2pi0_stack->GetXaxis()->SetNdivisions( 508 , kTRUE);
         m2pi0_stack->GetXaxis()->SetRangeUser( -0.2 , 0.15);
         m2pi0_stack->SetMaximum( 3e5 );
@@ -160,13 +161,13 @@ void run()
         hdata->Draw("same, E1" );
 
 
-        TLegend legd(0.70, 0.57, 0.87, 0.87 );
+        TLegend legd(0.60, 0.57, 0.87, 0.87 );
         legd.SetTextFont( 133 );
         legd.SetTextSize( 14 );
-        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "k2pig_pos") ) , "K_{2#pi}", "f"  );
-        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "ke3_pos") ) , "K_{e3}", "f"  );
-        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "k3pi0_pos") ) , "K_{3#pi0}", "f"  );
-        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "km3_pos") ) , "K_{#mu3}", "f"  );
+        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "k2pig_pos") ) , "K #rightarrow #pi^{+} #pi^{0}", "f"  );
+        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "ke3_pos") ) , "K #rightarrow e^{+} #pi^{0} #nu_{e}", "f"  );
+        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "k3pi0_pos") ) , "K #rightarrow #pi^{+} #pi^{0} #pi^{0}", "f"  );
+        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "km3_pos") ) , "K #rightarrow #mu^{+} #pi^{0} #nu_{#mu}", "f"  );
         legd.AddEntry( hdata , "data", "lpe"  );
 
         legd.Draw("same");
@@ -214,13 +215,13 @@ void run()
         hdata->Draw("same, E1" );
 
 
-        TLegend legd(0.70, 0.57, 0.87, 0.87 );
+        TLegend legd(0.60, 0.57, 0.87, 0.87 );
         legd.SetTextFont( 133 );
         legd.SetTextSize( 14 );
-        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "k2pig_pos") ) , "K_{2#pi}", "f"  );
-        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "ke3_pos") ) , "K_{e3}", "f"  );
-        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "k3pi0_pos") ) , "K_{3#pi0}", "f"  );
-        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "km3_pos") ) , "K_{#mu3}", "f"  );
+        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "k2pig_pos") ) , "K #rightarrow #pi^{+} #pi^{0}", "f"  );
+        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "ke3_pos") ) , "K #rightarrow e^{+} #pi^{0} #nu_{e}", "f"  );
+        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "k3pi0_pos") ) , "K #rightarrow #pi^{+} #pi^{0} #pi^{0}", "f"  );
+        legd.AddEntry( static_cast<TH1*>( hlist->FindObject( "km3_pos") ) , "K #rightarrow #mu^{+} #pi^{0} #nu_{#mu}", "f"  );
         legd.AddEntry( hdata , "data", "lpe"  );
 
         legd.Draw("same");
@@ -229,3 +230,5 @@ void run()
 
 
 }
+
+void produce_plots(){ run() ; }

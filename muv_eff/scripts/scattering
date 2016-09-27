@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import yaml
 import numpy as np
 import math
+import sys
 
 def pdg_scatter_theta( mom, beta = 1.0, nrad  = 1.0, z = 1.0 ):
     '''Return rms width of projected angular distribution
@@ -46,6 +47,8 @@ x_iron = 4.70 #cm
 
 nrad_1 = l_lkr / x_lkr + l_hac / x_iron + l_iron / x_iron
 
+print( nrad_1 )
+
 z_dch =  11880.2
 z_lkr = 12108.2
 z_muv = 12902.8
@@ -64,6 +67,8 @@ ax = fig.add_subplot( 111 )
 ax.grid( 'on' )
 
 ax.set_yscale( 'log' )
+
+print( na62_scatter_1(20) )
 
 ax.plot( mom, na62_scatter_1( mom ), '-', color ='k', lw = 2, label = 'Scattering' )
 ax.plot( mom, na62_dch_res( mom ), '--', color ='k', lw = 2, label = 'DCH' )

@@ -1,0 +1,110 @@
+#!/usr/bin/env python
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+
+def plot_data( filename, name, title ):
+    dt = pd.read_csv( filename, delim_whitespace = True )
+    fig = plt.figure( figsize = [5,4] )
+    ax = fig.add_subplot( 111 )
+
+    ax.grid( 'on' )
+    ax.set_ylim( -0.0003, 0.0003 )
+    ax.set_xlim( 20400, 20550 )
+    ax.set_xlabel( 'Run')
+    ax.set_ylabel( 'dxdz')
+    ax.yaxis.get_major_formatter().set_powerlimits((0, 1))
+    ax.plot( dt['run'], dt['dxdz'], 'k+', rasterized = True )
+    labels = ax.get_xticklabels()
+    plt.setp(labels, rotation=90 )
+    ax.set_title( title )
+    plt.tight_layout()
+
+    output = 'output/plots/{0}_{1}.pdf'.format( name, 'dxdz' )
+    print( 'saving {0}'.format( output ) )
+
+    plt.cla();
+
+    ax.grid();
+    ax.set_aspect( 'equal' )
+    ax.set_title( title )
+    ax.scatter( dt['xoff'] , dt['yoff'], rasterized = True );
+    ax.set_ylim( -2, 2 )
+    ax.set_xlim( -2, 2 )
+    ax.set_xlabel( 'xoff (cm)')
+    ax.set_ylabel( 'yoff (cm)')
+    output = 'output/plots/{0}_{1}.pdf'.format( name, 'xyoff' )
+    plt.savefig( output , format = 'pdf', transparent = True)
+
+    plt.cla();
+
+    ax.grid();
+    ax.set_aspect( 'equal' )
+    ax.set_title( title )
+    ax.xaxis.get_major_formatter().set_powerlimits((0, 1))
+    ax.yaxis.get_major_formatter().set_powerlimits((0, 1))
+    ax.scatter( dt['dxdz'] , dt['dydz'], rasterized = True );
+    ax.set_ylim( -0.0003, 0.0003 )
+    ax.set_xlim( -0.0003, 0.0003 )
+    ax.set_xlabel( 'dxdz')
+    ax.set_ylabel( 'dydz')
+    output = 'output/plots/{0}_{1}.pdf'.format( name, 'dxydz' )
+    plt.savefig( output , format = 'pdf', transparent = True)
+
+def plot_kick_data( filename, name, title ):
+    dt = pd.read_csv( filename, delim_whitespace = True )
+    fig = plt.figure( figsize = [5,4] )
+    ax = fig.add_subplot( 111 )
+
+    ax.grid( 'on' )
+    ax.set_ylim( -0.3, 0.3 )
+    ax.set_xlim( 20400, 20550 )
+    ax.set_xlabel( 'Run')
+    ax.set_ylabel( 'MPN33 kick (MeV)')
+    ax.yaxis.get_major_formatter().set_powerlimits((0, 1))
+    ax.plot( dt['run'], dt['poskick'], 'r+', rasterized = True,  label = '+ve particles' )
+    ax.plot( dt['run'], dt['negkick'], 'bo', rasterized = True,  label = '-ve particles'  )
+    labels = ax.get_xticklabels()
+    plt.setp(labels, rotation=90 )
+    ax.set_title( title )
+    lines, labels = ax.get_legend_handles_labels()
+    ax.legend( lines, labels, loc = 'upper right' )
+
+    plt.tight_layout()
+    output = 'output/plots/{0}_{1}.pdf'.format( name, 'mpn33_kick' )
+    print( 'saving {0}'.format( output ) )
+
+    plt.savefig( output , format = 'pdf', transparent = True)
+
+def plot_easy( filename, name, title ):
+    dt = pd.read_csv( filename, delim_whitespace = True )
+    fig = plt.figure( figsize = [5,4] )
+    ax = fig.add_subplot( 111 )
+    ax.grid( 'on' )
+
+    ax.plot( dt['run'], dt['pmag'] )
+    output = 'output/plots/{0}_{1}.pdf'.format( name, 'p' )
+    print( output )
+    plt.savefig( output, format = 'pdf', trasnparent = True )
+
+plot_easy( "output/data/p5.data.q11t.v3.pos_kaon_props_KPLUSTREE.dat",'p5_pos_kp', 'P5 kp : +ve pol : K+')
+
+sys.exit()
+
+#Kaon beam database
+plot_data( "output/data/p5.data.q11t.v3.neg_kaon_props_KPLUSTREE.dat",'p5_neg_kp', 'P5 kp : -ve pol : K+')
+plot_data( "output/data/p5.data.q11t.v3.pos_kaon_props_KPLUSTREE.dat",'p5_pos_kp', 'P5 kp : +ve pol : K+')
+
+plot_data( "output/data/p6.data.km.q11t.v2.neg_kaon_props_KMINUSTREE.dat",'p6_neg_km', 'P6 km : -ve pol : K-')
+plot_data( "output/data/p6.data.km.q11t.v2.pos_kaon_props_KMINUSTREE.dat",'p6_pos_km', 'P6 km : +ve pol : K-')
+
+plot_data( "output/data/p6.data.kless.q11t.v2.pos_kaon_props_KMINUSTREE.dat",'p6_pos_kless', 'P6 kless : +ve pol : K-')
+
+#spectrometer kicking
+plot_kick_data( "output/data/p5.data.q11t.v3.neg_magnet_burst.dat", 'p5_neg_kp', 'P5 kp : -ve pol' )
+plot_kick_data( "output/data/p5.data.q11t.v3.pos_magnet_burst.dat", 'p5_pos_kp', 'P5 kp : +ve pol' )
+
+plot_kick_data( "output/data/p6.data.km.q11t.v2.neg_magnet_burst.dat", 'p6_neg_km', 'P6 km : -ve pol' )
+plot_kick_data( "output/data/p6.data.km.q11t.v2.pos_magnet_burst.dat", 'p6_pos_km', 'P6 km : +ve pol' )
+
+plot_kick_data( "output/data/p6.data.kless.q11t.v2.pos_magnet_burst.dat", 'p6_pos_kless', 'P6 kless : +ve pol' )

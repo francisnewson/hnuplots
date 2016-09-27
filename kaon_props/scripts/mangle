@@ -1,0 +1,38 @@
+#!/usr/bin/env python
+import pandas as pd
+import numpy as np
+import os.path as osp
+import matplotlib.pyplot as plt
+
+def mangle( filename, dest ):
+    dt = pd.read_csv( filename, delim_whitespace = True )
+    res = dt.groupby( ['dxdz', 'dydz', 'xoff', 'yoff', 'pmag'] , as_index = False )['count'].sum()
+
+    print( filename )
+    print( len(dt ) )
+    print( len(res ) )
+    with open ( osp.join( 'output/beam', dest ), 'w' ) as f:
+        f.write( res.sort( 'count',  ascending = False )
+                [ ['count', 'dxdz', 'dydz', 'xoff', 'yoff', 'pmag'] ]
+                .to_csv( sep = ' ', float_format = '%8.7f', index = False ) )
+
+def ab( filename, keyname ):
+    dt = pd.read_csv( filename, delim_whitespace = True )
+    fig = plt.figure()
+    ax = fig.add_subplot( 111 )
+    ax.hist( dt['beta'], 50 )
+    #ax.set_yscale( 'log' )
+    print ( dt['beta'].std() )
+    plt.savefig( osp.join( 'output/ab', keyname ) + '.pdf', format = 'pdf' )
+
+#mangle( 'output/data/p5.data.q11t.v3.neg_kaon_props_KPLUSTREE.dat', 'p5.q11t.kp_prop_neg.dat' )
+#mangle( 'output/data/p5.data.q11t.v3.pos_kaon_props_KPLUSTREE.dat', 'p5.q11t.kp_prop_pos.dat' )
+#
+#mangle( 'output/data/p6.data.km.q11t.v2.neg_kaon_props_KMINUSTREE.dat', 'p6.q11t.km_prop_neg.dat' )
+#mangle( 'output/data/p6.data.km.q11t.v2.pos_kaon_props_KMINUSTREE.dat', 'p6.q11t.km_prop_pos.dat' )
+
+ab( 'output/data/p5.data.q11t.v3.neg_kaon_props_KPLUSTREE.dat', 'p5.q11t.kp_prop_neg.dat' )
+ab( 'output/data/p5.data.q11t.v3.pos_kaon_props_KPLUSTREE.dat', 'p5.q11t.kp_prop_pos.dat' )
+
+ab( 'output/data/p6.data.km.q11t.v2.neg_kaon_props_KMINUSTREE.dat', 'p6.q11t.km_prop_neg.dat' )
+ab( 'output/data/p6.data.km.q11t.v2.pos_kaon_props_KMINUSTREE.dat', 'p6.q11t.km_prop_pos.dat' )

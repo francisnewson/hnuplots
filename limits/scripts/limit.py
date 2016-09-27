@@ -24,7 +24,7 @@ km2e949_color = '#888888'
 ax.plot( km2hayano['mass'], km2hayano['U2'], label = 'KEK (1982)',
                 ls = '--', lw = 2, color = hayano_color,  mec = 'none' )
 
-ax.plot( km2e949['mass'], km2e949['U2'], label = 'E949 (2015)',
+ax.plot( km2e949['mass'], 0.1 * km2e949['U2'], label = 'E949 (2015)',
                 ls = '-', lw = 2, color = km2e949_color,  mec = 'none' )
 
 #Add legend
@@ -34,7 +34,7 @@ leg.get_frame().set_facecolor('#ffffff')
 
 #Label axes
 ax.set_xlim( 0, 400 )
-ax.set_ylim( 1e-8, 4e-5 )
+ax.set_ylim( 1e-9, 4e-5 )
 plt.xlabel( r'Heavy neutrino mass $(\unit[]{MeV/c^2}$ )' )
 plt.ylabel( '$|U_{\mu h}|^{2}$' )
 ax.set_yscale( 'log' )

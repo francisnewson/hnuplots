@@ -132,3 +132,9 @@ void run()
 
     c.SaveAs( "output/data_muv_eff_xy_ratrat.pdf", "pdf");
 }
+
+void produce_plots()
+{
+    run();
+}
+

@@ -1,0 +1,31 @@
+#!/usr/bin/env python
+import matplotlib.pyplot as plt
+import numpy as np
+
+def raw_weight(p):
+    alpha = 0.07
+    w = 1 + alpha * np.power( p - 74 , 2 )
+    w *= 1  - 0.01 * ( p - 74 )
+    if w > 77.5:
+        w*= 1 +12 * ( p - 74 )
+    return w
+
+weight = np.vectorize( raw_weight )
+mom = np.arange( 64, 84 , 0.1)
+weights = weight( mom )
+
+print( mom)
+print( weights )
+
+
+fig = plt.figure( figsize = [5,4] )
+ax = fig.add_subplot( 111 )
+ax.set_xlim( 69, 79 )
+ax.set_ylim( 0, 4 )
+ax.set_xlabel( 'Kaon momentum (GeV/c)' )
+ax.set_ylabel( 'MC weight' )
+ax.grid( 'on' )
+plt.tight_layout()
+ax.plot( mom, weights, 'k-' )
+plt.savefig( 'output/mom_weights.pdf', format = 'pdf',
+        transparent = True )

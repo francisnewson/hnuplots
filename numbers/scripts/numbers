@@ -1,0 +1,55 @@
+#!/usr/bin/env python
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+fig = plt.figure(figsize =[16,8])
+ax=fig.add_subplot(111)
+ax.set_xlim( 0, 1 )
+ax.set_ylim( 0, 10 )
+
+y = 7.5
+xmin = 0
+xmax = 1
+
+delta = 0.8
+
+ymin = y - delta
+ymax = y + delta
+
+ax.hlines( y, xmin, xmax )
+
+ms = [0, 50, 100, 150, 200, 250, 300, 350, 380, 400]
+
+m2s = [0, 0.02, 0.04, 0.06, 0.08, 0.1, 0.12, 0.14, 0.16 ]
+
+for m in ms:
+    ax.vlines( m / 400.0 , ymin, y )
+    ax.text( m /400.0 , ymin -0.6, '{0}'.format( m ), ha = 'center' )
+
+for m2 in m2s:
+    m = 1000 * np.sqrt(m2)
+    ax.vlines(  m /400.0 , y, ymax )
+    ax.text( m /400.0 , ymax +0.6, '{0}'.format( m2 ), ha = 'center' )
+
+
+y = 2.5
+xmin = 0
+xmax = 1
+
+ymin = y - delta
+ymax = y + delta
+
+ax.hlines( y, xmin, xmax )
+
+for m2 in m2s:
+    ax.vlines( m2 / 0.16 , ymin, y )
+    ax.text( m2 / 0.16, ymin - 0.6,  '{0}'.format( m2), ha = 'center' )
+
+for m in ms:
+    m2 = (0.001 * m)**2
+    ax.vlines( m2 / 0.16, y, ymax)
+    ax.text( m2 / 0.16, ymax + 0.6, '{0}'.format( m ), ha = 'center' )
+
+plt.axis('off')
+plt.savefig( 'output/convert.pdf', fomrat = 'pdf' )

@@ -1,0 +1,195 @@
+#!/usr/bin/env python
+import sys
+import matplotlib.pyplot as plt
+sys.path.insert( 1, '/Users/francisnewson/Documents/Birmingham/na62/note/working/km2g/scripts/' )
+import k2g
+
+#Check raw integrals with Bijnens
+
+def check_bijnens():
+    print ('Raw integrals in TABLE 2 of Nucl Phys B 396 (1993) 81')
+
+    F_K = k2g.F_K_old
+
+    expe = { 'sdp' : 1.67e-2, 'sdm': 1.67e-2,
+            'intp' : -8.22e-8, 'intm' : 3.67e-6 }
+
+    expm = { 'sdp' : 1.18e-2, 'sdm': 1.18e-2,
+            'intp' : -1.78e-8, 'intm' : 1.23e-2 }
+
+    for r,name,exp in [ (k2g.re, 'Ke2', expe), ( k2g.rm, 'Km2', expm ) ]:
+
+        asd = k2g.A_SD( r, F_K )
+        aint = k2g.A_INT( r, F_K )
+
+        print( "\nUsing original paramters from Bijnens:" )
+        print( "F_K: {0:.2e}, A_SD: {1:.2e}, A_INT: {2:.2e}\n".format( F_K, asd, aint ) )
+
+        raw_sdm = k2g.g_integrate_raw( k2g.f_SDM, r )[0]
+        raw_sdp = k2g.g_integrate_raw( k2g.f_SDP, r )[0]
+
+        raw_intm = k2g.g_integrate_raw( k2g.f_INTM, r )[0]
+        raw_intp = k2g.g_integrate_raw( k2g.f_INTP, r )[0]
+
+        scaled_intm = raw_intm * aint / asd
+        scaled_intp = raw_intp * aint / asd
+
+        hdfmt = '{0:8} {1:>10} {2:>10} {3:>10} {4:>10}'
+        valfmt = '{0:>8} {1:10.2e} {2:10.2e} {3:10.2e} {4:10.2e}'
+        print( hdfmt.format( name , 'SD+', 'SD-', 'INT+', 'INT-' ) )
+        print( valfmt.format( 'me', raw_sdp, raw_sdm, scaled_intp, scaled_intm) )
+        print( valfmt.format( 'Bijnens', exp['sdp'], exp['sdm'], exp['intp'], exp['intm'] ) )
+
+
+def check_goudzovski_c4():
+    print ('Relative braching ratios BR(X)/BD(Kl2)')
+
+    F_K = k2g.F_K_new
+
+    expm = { 'sdm' : 2.11e-6, 'sdp' : 1.46e-5 }
+    expe = { 'sdm' : 0.116, 'sdp' : 0.803 }
+
+    F_V = 0.0945
+    F_A = 0.0425
+
+    for r, name, exp in [ (k2g.re, 'Ke2', expe), ( k2g.rm, 'Km2', expm ) ]:
+        asd = k2g.A_SD( r, F_K )
+        aint = k2g.A_INT( r, F_K )
+
+        print( "\nUsing new paramters from PDG:" )
+        print( "F_K: {0:.2e}, A_SD: {1:.2e}, A_INT: {2:.2e}\n".format( F_K, asd, aint ) )
+
+        br_sdp = k2g.g_integrate_cp4( r, F_K, F_V, F_A, k2g.p_sdp )[0]
+        br_sdp_rel = br_sdp / k2g.g_km2
+
+        br_sdm = k2g.g_integrate_cp4( r, F_K, F_V, F_A, k2g.p_sdm )[0]
+        br_sdm_rel = br_sdm / k2g.g_km2
+
+        hdfmt = '{0:10} {1:>10} {2:>10} '
+        valfmt = '{0:>10} {1:10.2e} {2:10.2e} '
+        print( hdfmt.format( name , 'SD+', 'SD-' ) )
+        print( valfmt.format( 'me', br_sdp_rel, br_sdm_rel  ) )
+        print( valfmt.format( 'Goudzovski', exp['sdp'], exp['sdm']  ) )
+
+def check_goudzovski_c6():
+    print ('Relative braching ratios BR(X)/BD(Kl2)')
+
+    F_K = k2g.F_K_new
+
+    expm = { 'sdm' : 2.93e-6, 'sdp' : 1.29e-5 }
+    expe = { 'sdm' : 0.153, 'sdp' : 0.692 }
+
+    F_V0 = 0.082
+    F_VX = 0.138775500
+
+    F_A0 = 0.034
+    F_AX = 0.003673469
+
+    for r, name, exp in [ (k2g.re, 'Ke2', expe), ( k2g.rm, 'Km2', expm ) ]:
+        asd = k2g.A_SD( r, F_K )
+        aint = k2g.A_INT( r, F_K )
+
+        print( "\nUsing new paramters from PDG:" )
+        print( "F_K: {0:.2e}, A_SD: {1:.2e}, A_INT: {2:.2e}\n".format( F_K, asd, aint ) )
+
+        br_sdp = k2g.g_integrate_cp6( r, F_K, F_V0, F_VX, F_A0, F_AX, k2g.p_sdp )[0]
+        br_sdp_rel = br_sdp / k2g.g_km2
+
+        br_sdm = k2g.g_integrate_cp6( r, F_K, F_V0, F_VX, F_A0, F_AX, k2g.p_sdm )[0]
+        br_sdm_rel = br_sdm / k2g.g_km2
+
+        hdfmt = '{0:10} {1:>10} {2:>10} '
+        valfmt = '{0:>10} {1:10.2e} {2:10.2e} '
+        print( hdfmt.format( name , 'SD+', 'SD-' ) )
+        print( valfmt.format( 'me', br_sdp_rel, br_sdm_rel  ) )
+        print( valfmt.format( 'Goudzovski', exp['sdp'], exp['sdm']  ) )
+
+def compute_best():
+    print ('Computed Km2g branching ratios\n')
+
+    F_V0 = 0.082
+    F_VX = 0.138775500
+
+    F_A0 = 0.034
+    F_AX = 0.003673469
+
+    F_K = k2g.F_K_new
+
+    r = k2g.rm
+
+    br_sdp = k2g.g_integrate_cp6( r, F_K, F_V0, F_VX, F_A0, F_AX, k2g.p_sdp )[0]
+    br_sdp_rel = br_sdp / k2g.g_km2
+
+    br_sdm = k2g.g_integrate_cp6( r, F_K, F_V0, F_VX, F_A0, F_AX, k2g.p_sdm )[0]
+    br_sdm_rel = br_sdm / k2g.g_km2
+
+    br_intp = k2g.g_integrate_cp6( r, F_K, F_V0, F_VX, F_A0, F_AX, k2g.p_intp )[0]
+    br_intp_rel = br_intp / k2g.g_km2
+
+    br_intm = k2g.g_integrate_cp6( r, F_K, F_V0, F_VX, F_A0, F_AX, k2g.p_intm )[0]
+    br_intm_rel = br_intm / k2g.g_km2
+
+    hdfmt = '{0:8} {1:>10} {2:>10} {3:>10} {4:>10}'
+    valfmt = '{0:>8} {1:10.2e} {2:10.2e} {3:10.2e} {4:10.2e}'
+    print( hdfmt.format( 'km2' , 'SD+', 'SD-', 'INT+', 'INT-' ) )
+    print( valfmt.format( 'abs', br_sdp, br_sdm, br_intp, br_intm) )
+    print( valfmt.format( 'rel', br_sdp_rel, br_sdm_rel, br_intp_rel, br_intm_rel ) )
+
+
+def compute_kloe():
+    print ('Computed Km2g KLOE branching ratios\n')
+    r = k2g.rm
+    F_K = k2g.F_K_new
+
+    br_sdp = k2g.g_integrate_kloe( r, F_K,  k2g.p_sdp )[0]
+    br_sdp_rel = br_sdp / k2g.g_km2
+
+    br_sdm = k2g.g_integrate_kloe( r, F_K,  k2g.p_sdm )[0]
+    br_sdm_rel = br_sdm / k2g.g_km2
+
+    br_intp = k2g.g_integrate_kloe( r, F_K,  k2g.p_intp )[0]
+    br_intp_rel = br_intp / k2g.g_km2
+
+    br_intm = k2g.g_integrate_kloe( r, F_K,  k2g.p_intm )[0]
+    br_intm_rel = br_intm / k2g.g_km2
+
+    hdfmt = '{0:8} {1:>10} {2:>10} {3:>10} {4:>10}'
+    valfmt = '{0:>8} {1:10.2e} {2:10.2e} {3:10.2e} {4:10.2e}'
+    print( hdfmt.format( 'km2' , 'SD+', 'SD-', 'INT+', 'INT-' ) )
+    print( valfmt.format( 'abs', br_sdp, br_sdm, br_intp, br_intm) )
+    print( valfmt.format( 'rel', br_sdp_rel, br_sdm_rel, br_intp_rel, br_intm_rel ) )
+
+def plot_gfuncs():
+    r = k2g.rm
+
+    #intialize
+    fig = plt.figure( figsize = [8,6] )
+    ax = fig.add_subplot(111)
+
+
+    for func, name in [ ( k2g.f_SDM, 'sdm' ), ( k2g.f_SDP, 'sdp'),
+            ( k2g.f_INTM, 'intm' ), ( k2g.f_INTP, 'intp' ) ]:
+
+        plotted = k2g.g_plot( ax, func, r )
+        cbar = plt.colorbar( plotted )
+        plt.savefig( 'output/g_{0}.pdf'.format( name ) , format = 'pdf' , transparent = 'true' )
+        cbar.remove()
+        plt.cla()
+
+
+print( '\n\n----------------BIJNENS INTEGRALS-------------' )
+check_bijnens()
+
+print( '\n\n----------------C4 BRANCHING FRAC------------' )
+check_goudzovski_c4()
+
+print( '\n\n----------------C6 BRANCHING FRAC------------' )
+check_goudzovski_c6()
+
+print( '\n\n-------------------BEST KM2 BRS---------------' )
+compute_best()
+
+print( '\n\n-------------------KLOE KM2 BRS---------------' )
+compute_kloe()
+
+#plot_gfuncs()

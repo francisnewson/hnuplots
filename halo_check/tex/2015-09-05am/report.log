@@ -1,0 +1,2221 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/MacPorts 2015_2) (preloaded format=pdflatex 2015.8.10)  6 SEP 2015 16:31
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**report.tex
+(./report.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 2 languages loaded.
+(/opt/local/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/opt/local/share/texmf-texlive/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/opt/local/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/opt/local/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/opt/local/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/opt/local/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/opt/local/share/texmf-texlive/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+(/opt/local/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/opt/local/share/texmf-texlive/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/opt/local/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen105
+\Gm@wd@mp=\dimen106
+\Gm@odd@mp=\dimen107
+\Gm@even@mp=\dimen108
+\Gm@layoutwidth=\dimen109
+\Gm@layoutheight=\dimen110
+\Gm@layouthoffset=\dimen111
+\Gm@layoutvoffset=\dimen112
+\Gm@dimlist=\toks15
+) (./report.aux)
+\openout1 = `report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+ (/opt/local/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count91
+\scratchdimen=\dimen113
+\scratchbox=\box26
+\nofMPsegments=\count92
+\nofMParguments=\count93
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count94
+\MPscratchDim=\dimen114
+\MPnumerator=\count95
+\makeMPintoPDFobject=\count96
+\everyMPtoPDFconversion=\toks17
+) (/opt/local/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/opt/local/share/texmf-texlive/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/opt/local/share/texmf-texlive/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/opt/local/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/opt/local/share/texmf-texlive/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(14.45377pt, 568.60034pt, 14.45377pt)
+* v-part:(T,H,B)=(14.45377pt, 816.13931pt, 14.45377pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=568.60034pt
+* \textheight=816.13931pt
+* \oddsidemargin=-57.81622pt
+* \evensidemargin=-57.81622pt
+* \topmargin=-94.81622pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 9.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_upper/h_cda.pdf, id=1, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_upper/h_cda.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_upper/h_cda.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_upper/h_cda.pdf used on input li
+ne 10.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_upper/h_cda_rat_fit.pdf, id=2, 569.12625pt x 534.99875pt
+>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_upper/h_cda_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_upper/h_cda_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_upper/h_cda_rat_fit.pdf used on 
+input line 11.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_upper/h_cda_rat_fit_opt.pdf, id=3, 569.12625pt x 534.998
+75pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_upper/h_cda_rat_fit_opt.pdf Graphic file (type pdf)
+
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_upper/h_cda_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_upper/h_cda_rat_fit_opt.pdf used
+ on input line 12.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_upper/h_m2m_kmu.pdf, id=4, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_upper/h_m2m_kmu.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_upper/h_m2m_kmu.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_upper/h_m2m_kmu.pdf used on inpu
+t line 13.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_upper/h_m2m_kmu_rat_fit.pdf, id=5, 569.12625pt x 534.998
+75pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_upper/h_m2m_kmu_rat_fit.pdf Graphic file (type pdf)
+
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_upper/h_m2m_kmu_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_upper/h_m2m_kmu_rat_fit.pdf used
+ on input line 14.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_upper/h_m2m_kmu_rat_fit_opt.pdf, id=6, 569.12625pt x 534
+.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_upper/h_m2m_kmu_rat_fit_opt.pdf Graphic file (type 
+pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_upper/h_m2m_kmu_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_upper/h_m2m_kmu_rat_fit_opt.pdf 
+used on input line 15.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_upper/h_p.pdf, id=7, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_upper/h_p.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_upper/h_p.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_upper/h_p.pdf used on input line
+ 16.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_upper/h_p_rat_fit.pdf, id=8, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_upper/h_p_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_upper/h_p_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_upper/h_p_rat_fit.pdf used on in
+put line 17.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_upper/h_p_rat_fit_opt.pdf, id=9, 569.12625pt x 534.99875
+pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_upper/h_p_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_upper/h_p_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_upper/h_p_rat_fit_opt.pdf used o
+n input line 18.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_upper/h_t.pdf, id=10, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_upper/h_t.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_upper/h_t.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_upper/h_t.pdf used on input line
+ 19.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_upper/h_t_rat_fit.pdf, id=11, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_upper/h_t_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_upper/h_t_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_upper/h_t_rat_fit.pdf used on in
+put line 20.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_upper/h_t_rat_fit_opt.pdf, id=12, 569.12625pt x 534.9987
+5pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_upper/h_t_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_upper/h_t_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_upper/h_t_rat_fit_opt.pdf used o
+n input line 21.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_upper/h_z.pdf, id=13, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_upper/h_z.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_upper/h_z.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_upper/h_z.pdf used on input line
+ 22.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_upper/h_z_rat_fit.pdf, id=14, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_upper/h_z_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_upper/h_z_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_upper/h_z_rat_fit.pdf used on in
+put line 23.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_upper/h_z_rat_fit_opt.pdf, id=15, 569.12625pt x 534.9987
+5pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_upper/h_z_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_upper/h_z_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_upper/h_z_rat_fit_opt.pdf used o
+n input line 24.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+ [1
+
+{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map} </Users/francisnew
+son/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/pos_c
+heck_upper/h_cda.pdf, page is rotated 90 degrees> </Users/francisnewson/Documen
+ts/Birmingham/na62/note/working/halo_check/output/2015-09-05am/pos_check_upper/
+h_cda_rat_fit.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents/
+Birmingham/na62/note/working/halo_check/output/2015-09-05am/pos_check_upper/h_c
+da_rat_fit_opt.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents
+/Birmingham/na62/note/working/halo_check/output/2015-09-05am/pos_check_upper/h_
+m2m_kmu.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents/Birmin
+gham/na62/note/working/halo_check/output/2015-09-05am/pos_check_upper/h_m2m_kmu
+_rat_fit.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents/Birmi
+ngham/na62/note/working/halo_check/output/2015-09-05am/pos_check_upper/h_m2m_km
+u_rat_fit_opt.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents/
+Birmingham/na62/note/working/halo_check/output/2015-09-05am/pos_check_upper/h_p
+.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents/Birmingham/na
+62/note/working/halo_check/output/2015-09-05am/pos_check_upper/h_p_rat_fit.pdf,
+ page is rotated 90 degrees> </Users/francisnewson/Documents/Birmingham/na62/no
+te/working/halo_check/output/2015-09-05am/pos_check_upper/h_p_rat_fit_opt.pdf, 
+page is rotated 90 degrees> </Users/francisnewson/Documents/Birmingham/na62/not
+e/working/halo_check/output/2015-09-05am/pos_check_upper/h_t.pdf, page is rotat
+ed 90 degrees> </Users/francisnewson/Documents/Birmingham/na62/note/working/hal
+o_check/output/2015-09-05am/pos_check_upper/h_t_rat_fit.pdf, page is rotated 90
+ degrees> </Users/francisnewson/Documents/Birmingham/na62/note/working/halo_che
+ck/output/2015-09-05am/pos_check_upper/h_t_rat_fit_opt.pdf, page is rotated 90 
+degrees> </Users/francisnewson/Documents/Birmingham/na62/note/working/halo_chec
+k/output/2015-09-05am/pos_check_upper/h_z.pdf, page is rotated 90 degrees> </Us
+ers/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015
+-09-05am/pos_check_upper/h_z_rat_fit.pdf, page is rotated 90 degrees> </Users/f
+rancisnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-0
+5am/pos_check_upper/h_z_rat_fit_opt.pdf, page is rotated 90 degrees>]
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_upper/h_cda.pdf, id=670, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_upper/h_cda.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_upper/h_cda.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_upper/h_cda.pdf used on input li
+ne 33.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_upper/h_cda_rat_fit.pdf, id=671, 569.12625pt x 534.99875
+pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_upper/h_cda_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_upper/h_cda_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_upper/h_cda_rat_fit.pdf used on 
+input line 34.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_upper/h_cda_rat_fit_opt.pdf, id=672, 569.12625pt x 534.9
+9875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_upper/h_cda_rat_fit_opt.pdf Graphic file (type pdf)
+
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_upper/h_cda_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_upper/h_cda_rat_fit_opt.pdf used
+ on input line 35.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_upper/h_m2m_kmu.pdf, id=673, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_upper/h_m2m_kmu.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_upper/h_m2m_kmu.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_upper/h_m2m_kmu.pdf used on inpu
+t line 36.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_upper/h_m2m_kmu_rat_fit.pdf, id=674, 569.12625pt x 534.9
+9875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_upper/h_m2m_kmu_rat_fit.pdf Graphic file (type pdf)
+
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_upper/h_m2m_kmu_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_upper/h_m2m_kmu_rat_fit.pdf used
+ on input line 37.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_upper/h_m2m_kmu_rat_fit_opt.pdf, id=675, 569.12625pt x 5
+34.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_upper/h_m2m_kmu_rat_fit_opt.pdf Graphic file (type 
+pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_upper/h_m2m_kmu_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_upper/h_m2m_kmu_rat_fit_opt.pdf 
+used on input line 38.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_upper/h_p.pdf, id=676, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_upper/h_p.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_upper/h_p.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_upper/h_p.pdf used on input line
+ 39.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_upper/h_p_rat_fit.pdf, id=677, 569.12625pt x 534.99875pt
+>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_upper/h_p_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_upper/h_p_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_upper/h_p_rat_fit.pdf used on in
+put line 40.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_upper/h_p_rat_fit_opt.pdf, id=678, 569.12625pt x 534.998
+75pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_upper/h_p_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_upper/h_p_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_upper/h_p_rat_fit_opt.pdf used o
+n input line 41.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_upper/h_t.pdf, id=679, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_upper/h_t.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_upper/h_t.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_upper/h_t.pdf used on input line
+ 42.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_upper/h_t_rat_fit.pdf, id=680, 569.12625pt x 534.99875pt
+>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_upper/h_t_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_upper/h_t_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_upper/h_t_rat_fit.pdf used on in
+put line 43.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_upper/h_t_rat_fit_opt.pdf, id=681, 569.12625pt x 534.998
+75pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_upper/h_t_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_upper/h_t_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_upper/h_t_rat_fit_opt.pdf used o
+n input line 44.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_upper/h_z.pdf, id=682, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_upper/h_z.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_upper/h_z.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_upper/h_z.pdf used on input line
+ 45.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_upper/h_z_rat_fit.pdf, id=683, 569.12625pt x 534.99875pt
+>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_upper/h_z_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_upper/h_z_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_upper/h_z_rat_fit.pdf used on in
+put line 46.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_upper/h_z_rat_fit_opt.pdf, id=684, 569.12625pt x 534.998
+75pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_upper/h_z_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_upper/h_z_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_upper/h_z_rat_fit_opt.pdf used o
+n input line 47.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+ [2
+
+ </Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output
+/2015-09-05am/neg_check_upper/h_cda.pdf, page is rotated 90 degrees> </Users/fr
+ancisnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05
+am/neg_check_upper/h_cda_rat_fit.pdf, page is rotated 90 degrees> </Users/franc
+isnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/
+neg_check_upper/h_cda_rat_fit_opt.pdf, page is rotated 90 degrees> </Users/fran
+cisnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am
+/neg_check_upper/h_m2m_kmu.pdf, page is rotated 90 degrees> </Users/francisnews
+on/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/neg_ch
+eck_upper/h_m2m_kmu_rat_fit.pdf, page is rotated 90 degrees> </Users/francisnew
+son/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/neg_c
+heck_upper/h_m2m_kmu_rat_fit_opt.pdf, page is rotated 90 degrees> </Users/franc
+isnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/
+neg_check_upper/h_p.pdf, page is rotated 90 degrees> </Users/francisnewson/Docu
+ments/Birmingham/na62/note/working/halo_check/output/2015-09-05am/neg_check_upp
+er/h_p_rat_fit.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents
+/Birmingham/na62/note/working/halo_check/output/2015-09-05am/neg_check_upper/h_
+p_rat_fit_opt.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents/
+Birmingham/na62/note/working/halo_check/output/2015-09-05am/neg_check_upper/h_t
+.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents/Birmingham/na
+62/note/working/halo_check/output/2015-09-05am/neg_check_upper/h_t_rat_fit.pdf,
+ page is rotated 90 degrees> </Users/francisnewson/Documents/Birmingham/na62/no
+te/working/halo_check/output/2015-09-05am/neg_check_upper/h_t_rat_fit_opt.pdf, 
+page is rotated 90 degrees> </Users/francisnewson/Documents/Birmingham/na62/not
+e/working/halo_check/output/2015-09-05am/neg_check_upper/h_z.pdf, page is rotat
+ed 90 degrees> </Users/francisnewson/Documents/Birmingham/na62/note/working/hal
+o_check/output/2015-09-05am/neg_check_upper/h_z_rat_fit.pdf, page is rotated 90
+ degrees> </Users/francisnewson/Documents/Birmingham/na62/note/working/halo_che
+ck/output/2015-09-05am/neg_check_upper/h_z_rat_fit_opt.pdf, page is rotated 90 
+degrees>]
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_upper/h_cda.pdf, id=1336, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_upper/h_cda.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_upper/h_cda.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_upper/h_cda.pdf used on input l
+ine 56.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_upper/h_cda_rat_fit.pdf, id=1337, 569.12625pt x 534.998
+75pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_upper/h_cda_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_upper/h_cda_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_upper/h_cda_rat_fit.pdf used on
+ input line 57.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_upper/h_cda_rat_fit_opt.pdf, id=1338, 569.12625pt x 534
+.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_upper/h_cda_rat_fit_opt.pdf Graphic file (type pdf
+)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_upper/h_cda_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_upper/h_cda_rat_fit_opt.pdf use
+d on input line 58.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_upper/h_m2m_kmu.pdf, id=1339, 569.12625pt x 534.99875pt
+>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_upper/h_m2m_kmu.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_upper/h_m2m_kmu.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_upper/h_m2m_kmu.pdf used on inp
+ut line 59.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_upper/h_m2m_kmu_rat_fit.pdf, id=1340, 569.12625pt x 534
+.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_upper/h_m2m_kmu_rat_fit.pdf Graphic file (type pdf
+)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_upper/h_m2m_kmu_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_upper/h_m2m_kmu_rat_fit.pdf use
+d on input line 60.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_upper/h_m2m_kmu_rat_fit_opt.pdf, id=1341, 569.12625pt x
+ 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_upper/h_m2m_kmu_rat_fit_opt.pdf Graphic file (type
+ pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_upper/h_m2m_kmu_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_upper/h_m2m_kmu_rat_fit_opt.pdf
+ used on input line 61.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_upper/h_p.pdf, id=1342, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_upper/h_p.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_upper/h_p.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_upper/h_p.pdf used on input lin
+e 62.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_upper/h_p_rat_fit.pdf, id=1343, 569.12625pt x 534.99875
+pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_upper/h_p_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_upper/h_p_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_upper/h_p_rat_fit.pdf used on i
+nput line 63.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_upper/h_p_rat_fit_opt.pdf, id=1344, 569.12625pt x 534.9
+9875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_upper/h_p_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_upper/h_p_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_upper/h_p_rat_fit_opt.pdf used 
+on input line 64.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_upper/h_t.pdf, id=1345, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_upper/h_t.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_upper/h_t.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_upper/h_t.pdf used on input lin
+e 65.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_upper/h_t_rat_fit.pdf, id=1346, 569.12625pt x 534.99875
+pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_upper/h_t_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_upper/h_t_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_upper/h_t_rat_fit.pdf used on i
+nput line 66.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_upper/h_t_rat_fit_opt.pdf, id=1347, 569.12625pt x 534.9
+9875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_upper/h_t_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_upper/h_t_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_upper/h_t_rat_fit_opt.pdf used 
+on input line 67.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_upper/h_z.pdf, id=1348, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_upper/h_z.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_upper/h_z.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_upper/h_z.pdf used on input lin
+e 68.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_upper/h_z_rat_fit.pdf, id=1349, 569.12625pt x 534.99875
+pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_upper/h_z_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_upper/h_z_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_upper/h_z_rat_fit.pdf used on i
+nput line 69.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_upper/h_z_rat_fit_opt.pdf, id=1350, 569.12625pt x 534.9
+9875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_upper/h_z_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_upper/h_z_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_upper/h_z_rat_fit_opt.pdf used 
+on input line 70.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+ [3
+
+ </Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output
+/2015-09-05am/both_check_upper/h_cda.pdf, page is rotated 90 degrees> </Users/f
+rancisnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-0
+5am/both_check_upper/h_cda_rat_fit.pdf, page is rotated 90 degrees> </Users/fra
+ncisnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05a
+m/both_check_upper/h_cda_rat_fit_opt.pdf, page is rotated 90 degrees> </Users/f
+rancisnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-0
+5am/both_check_upper/h_m2m_kmu.pdf, page is rotated 90 degrees> </Users/francis
+newson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/bo
+th_check_upper/h_m2m_kmu_rat_fit.pdf, page is rotated 90 degrees> </Users/franc
+isnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/
+both_check_upper/h_m2m_kmu_rat_fit_opt.pdf, page is rotated 90 degrees> </Users
+/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09
+-05am/both_check_upper/h_p.pdf, page is rotated 90 degrees> </Users/francisnews
+on/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/both_c
+heck_upper/h_p_rat_fit.pdf, page is rotated 90 degrees> </Users/francisnewson/D
+ocuments/Birmingham/na62/note/working/halo_check/output/2015-09-05am/both_check
+_upper/h_p_rat_fit_opt.pdf, page is rotated 90 degrees> </Users/francisnewson/D
+ocuments/Birmingham/na62/note/working/halo_check/output/2015-09-05am/both_check
+_upper/h_t.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents/Bir
+mingham/na62/note/working/halo_check/output/2015-09-05am/both_check_upper/h_t_r
+at_fit.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents/Birming
+ham/na62/note/working/halo_check/output/2015-09-05am/both_check_upper/h_t_rat_f
+it_opt.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents/Birming
+ham/na62/note/working/halo_check/output/2015-09-05am/both_check_upper/h_z.pdf, 
+page is rotated 90 degrees> </Users/francisnewson/Documents/Birmingham/na62/not
+e/working/halo_check/output/2015-09-05am/both_check_upper/h_z_rat_fit.pdf, page
+ is rotated 90 degrees> </Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_upper/h_z_rat_fit_opt.pdf, page
+ is rotated 90 degrees>]
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_lower/h_cda.pdf, id=2002, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_lower/h_cda.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_lower/h_cda.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_lower/h_cda.pdf used on input li
+ne 79.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_lower/h_cda_rat_fit.pdf, id=2003, 569.12625pt x 534.9987
+5pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_lower/h_cda_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_lower/h_cda_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_lower/h_cda_rat_fit.pdf used on 
+input line 80.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_lower/h_cda_rat_fit_opt.pdf, id=2004, 569.12625pt x 534.
+99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_lower/h_cda_rat_fit_opt.pdf Graphic file (type pdf)
+
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_lower/h_cda_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_lower/h_cda_rat_fit_opt.pdf used
+ on input line 81.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_lower/h_m2m_kmu.pdf, id=2005, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_lower/h_m2m_kmu.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_lower/h_m2m_kmu.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_lower/h_m2m_kmu.pdf used on inpu
+t line 82.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_lower/h_m2m_kmu_rat_fit.pdf, id=2006, 569.12625pt x 534.
+99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_lower/h_m2m_kmu_rat_fit.pdf Graphic file (type pdf)
+
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_lower/h_m2m_kmu_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_lower/h_m2m_kmu_rat_fit.pdf used
+ on input line 83.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_lower/h_m2m_kmu_rat_fit_opt.pdf, id=2007, 569.12625pt x 
+534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_lower/h_m2m_kmu_rat_fit_opt.pdf Graphic file (type 
+pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_lower/h_m2m_kmu_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_lower/h_m2m_kmu_rat_fit_opt.pdf 
+used on input line 84.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_lower/h_p.pdf, id=2008, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_lower/h_p.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_lower/h_p.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_lower/h_p.pdf used on input line
+ 85.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_lower/h_p_rat_fit.pdf, id=2009, 569.12625pt x 534.99875p
+t>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_lower/h_p_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_lower/h_p_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_lower/h_p_rat_fit.pdf used on in
+put line 86.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_lower/h_p_rat_fit_opt.pdf, id=2010, 569.12625pt x 534.99
+875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_lower/h_p_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_lower/h_p_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_lower/h_p_rat_fit_opt.pdf used o
+n input line 87.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_lower/h_t.pdf, id=2011, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_lower/h_t.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_lower/h_t.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_lower/h_t.pdf used on input line
+ 88.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_lower/h_t_rat_fit.pdf, id=2012, 569.12625pt x 534.99875p
+t>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_lower/h_t_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_lower/h_t_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_lower/h_t_rat_fit.pdf used on in
+put line 89.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_lower/h_t_rat_fit_opt.pdf, id=2013, 569.12625pt x 534.99
+875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_lower/h_t_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_lower/h_t_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_lower/h_t_rat_fit_opt.pdf used o
+n input line 90.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_lower/h_z.pdf, id=2014, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_lower/h_z.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_lower/h_z.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_lower/h_z.pdf used on input line
+ 91.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_lower/h_z_rat_fit.pdf, id=2015, 569.12625pt x 534.99875p
+t>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_lower/h_z_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_lower/h_z_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_lower/h_z_rat_fit.pdf used on in
+put line 92.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_lower/h_z_rat_fit_opt.pdf, id=2016, 569.12625pt x 534.99
+875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_lower/h_z_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_lower/h_z_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_lower/h_z_rat_fit_opt.pdf used o
+n input line 93.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+ [4
+
+ </Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output
+/2015-09-05am/pos_check_lower/h_cda.pdf, page is rotated 90 degrees> </Users/fr
+ancisnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05
+am/pos_check_lower/h_cda_rat_fit.pdf, page is rotated 90 degrees> </Users/franc
+isnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/
+pos_check_lower/h_cda_rat_fit_opt.pdf, page is rotated 90 degrees> </Users/fran
+cisnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am
+/pos_check_lower/h_m2m_kmu.pdf, page is rotated 90 degrees> </Users/francisnews
+on/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/pos_ch
+eck_lower/h_m2m_kmu_rat_fit.pdf, page is rotated 90 degrees> </Users/francisnew
+son/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/pos_c
+heck_lower/h_m2m_kmu_rat_fit_opt.pdf, page is rotated 90 degrees> </Users/franc
+isnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/
+pos_check_lower/h_p.pdf, page is rotated 90 degrees> </Users/francisnewson/Docu
+ments/Birmingham/na62/note/working/halo_check/output/2015-09-05am/pos_check_low
+er/h_p_rat_fit.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents
+/Birmingham/na62/note/working/halo_check/output/2015-09-05am/pos_check_lower/h_
+p_rat_fit_opt.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents/
+Birmingham/na62/note/working/halo_check/output/2015-09-05am/pos_check_lower/h_t
+.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents/Birmingham/na
+62/note/working/halo_check/output/2015-09-05am/pos_check_lower/h_t_rat_fit.pdf,
+ page is rotated 90 degrees> </Users/francisnewson/Documents/Birmingham/na62/no
+te/working/halo_check/output/2015-09-05am/pos_check_lower/h_t_rat_fit_opt.pdf, 
+page is rotated 90 degrees> </Users/francisnewson/Documents/Birmingham/na62/not
+e/working/halo_check/output/2015-09-05am/pos_check_lower/h_z.pdf, page is rotat
+ed 90 degrees> </Users/francisnewson/Documents/Birmingham/na62/note/working/hal
+o_check/output/2015-09-05am/pos_check_lower/h_z_rat_fit.pdf, page is rotated 90
+ degrees> </Users/francisnewson/Documents/Birmingham/na62/note/working/halo_che
+ck/output/2015-09-05am/pos_check_lower/h_z_rat_fit_opt.pdf, page is rotated 90 
+degrees>]
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_lower/h_cda.pdf, id=2667, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_lower/h_cda.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_lower/h_cda.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_lower/h_cda.pdf used on input li
+ne 102.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_lower/h_cda_rat_fit.pdf, id=2668, 569.12625pt x 534.9987
+5pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_lower/h_cda_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_lower/h_cda_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_lower/h_cda_rat_fit.pdf used on 
+input line 103.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_lower/h_cda_rat_fit_opt.pdf, id=2669, 569.12625pt x 534.
+99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_lower/h_cda_rat_fit_opt.pdf Graphic file (type pdf)
+
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_lower/h_cda_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_lower/h_cda_rat_fit_opt.pdf used
+ on input line 104.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_lower/h_m2m_kmu.pdf, id=2670, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_lower/h_m2m_kmu.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_lower/h_m2m_kmu.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_lower/h_m2m_kmu.pdf used on inpu
+t line 105.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_lower/h_m2m_kmu_rat_fit.pdf, id=2671, 569.12625pt x 534.
+99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_lower/h_m2m_kmu_rat_fit.pdf Graphic file (type pdf)
+
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_lower/h_m2m_kmu_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_lower/h_m2m_kmu_rat_fit.pdf used
+ on input line 106.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_lower/h_m2m_kmu_rat_fit_opt.pdf, id=2672, 569.12625pt x 
+534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_lower/h_m2m_kmu_rat_fit_opt.pdf Graphic file (type 
+pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_lower/h_m2m_kmu_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_lower/h_m2m_kmu_rat_fit_opt.pdf 
+used on input line 107.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_lower/h_p.pdf, id=2673, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_lower/h_p.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_lower/h_p.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_lower/h_p.pdf used on input line
+ 108.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_lower/h_p_rat_fit.pdf, id=2674, 569.12625pt x 534.99875p
+t>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_lower/h_p_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_lower/h_p_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_lower/h_p_rat_fit.pdf used on in
+put line 109.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_lower/h_p_rat_fit_opt.pdf, id=2675, 569.12625pt x 534.99
+875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_lower/h_p_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_lower/h_p_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_lower/h_p_rat_fit_opt.pdf used o
+n input line 110.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_lower/h_t.pdf, id=2676, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_lower/h_t.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_lower/h_t.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_lower/h_t.pdf used on input line
+ 111.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_lower/h_t_rat_fit.pdf, id=2677, 569.12625pt x 534.99875p
+t>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_lower/h_t_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_lower/h_t_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_lower/h_t_rat_fit.pdf used on in
+put line 112.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_lower/h_t_rat_fit_opt.pdf, id=2678, 569.12625pt x 534.99
+875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_lower/h_t_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_lower/h_t_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_lower/h_t_rat_fit_opt.pdf used o
+n input line 113.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_lower/h_z.pdf, id=2679, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_lower/h_z.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_lower/h_z.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_lower/h_z.pdf used on input line
+ 114.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_lower/h_z_rat_fit.pdf, id=2680, 569.12625pt x 534.99875p
+t>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_lower/h_z_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_lower/h_z_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_lower/h_z_rat_fit.pdf used on in
+put line 115.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_lower/h_z_rat_fit_opt.pdf, id=2681, 569.12625pt x 534.99
+875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_lower/h_z_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_lower/h_z_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_lower/h_z_rat_fit_opt.pdf used o
+n input line 116.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+ [5
+
+ </Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output
+/2015-09-05am/neg_check_lower/h_cda.pdf, page is rotated 90 degrees> </Users/fr
+ancisnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05
+am/neg_check_lower/h_cda_rat_fit.pdf, page is rotated 90 degrees> </Users/franc
+isnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/
+neg_check_lower/h_cda_rat_fit_opt.pdf, page is rotated 90 degrees> </Users/fran
+cisnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am
+/neg_check_lower/h_m2m_kmu.pdf, page is rotated 90 degrees> </Users/francisnews
+on/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/neg_ch
+eck_lower/h_m2m_kmu_rat_fit.pdf, page is rotated 90 degrees> </Users/francisnew
+son/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/neg_c
+heck_lower/h_m2m_kmu_rat_fit_opt.pdf, page is rotated 90 degrees> </Users/franc
+isnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/
+neg_check_lower/h_p.pdf, page is rotated 90 degrees> </Users/francisnewson/Docu
+ments/Birmingham/na62/note/working/halo_check/output/2015-09-05am/neg_check_low
+er/h_p_rat_fit.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents
+/Birmingham/na62/note/working/halo_check/output/2015-09-05am/neg_check_lower/h_
+p_rat_fit_opt.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents/
+Birmingham/na62/note/working/halo_check/output/2015-09-05am/neg_check_lower/h_t
+.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents/Birmingham/na
+62/note/working/halo_check/output/2015-09-05am/neg_check_lower/h_t_rat_fit.pdf,
+ page is rotated 90 degrees> </Users/francisnewson/Documents/Birmingham/na62/no
+te/working/halo_check/output/2015-09-05am/neg_check_lower/h_t_rat_fit_opt.pdf, 
+page is rotated 90 degrees> </Users/francisnewson/Documents/Birmingham/na62/not
+e/working/halo_check/output/2015-09-05am/neg_check_lower/h_z.pdf, page is rotat
+ed 90 degrees> </Users/francisnewson/Documents/Birmingham/na62/note/working/hal
+o_check/output/2015-09-05am/neg_check_lower/h_z_rat_fit.pdf, page is rotated 90
+ degrees> </Users/francisnewson/Documents/Birmingham/na62/note/working/halo_che
+ck/output/2015-09-05am/neg_check_lower/h_z_rat_fit_opt.pdf, page is rotated 90 
+degrees>]
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_lower/h_cda.pdf, id=3333, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_lower/h_cda.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_lower/h_cda.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_lower/h_cda.pdf used on input l
+ine 125.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_lower/h_cda_rat_fit.pdf, id=3334, 569.12625pt x 534.998
+75pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_lower/h_cda_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_lower/h_cda_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_lower/h_cda_rat_fit.pdf used on
+ input line 126.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_lower/h_cda_rat_fit_opt.pdf, id=3335, 569.12625pt x 534
+.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_lower/h_cda_rat_fit_opt.pdf Graphic file (type pdf
+)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_lower/h_cda_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_lower/h_cda_rat_fit_opt.pdf use
+d on input line 127.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_lower/h_m2m_kmu.pdf, id=3336, 569.12625pt x 534.99875pt
+>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_lower/h_m2m_kmu.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_lower/h_m2m_kmu.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_lower/h_m2m_kmu.pdf used on inp
+ut line 128.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_lower/h_m2m_kmu_rat_fit.pdf, id=3337, 569.12625pt x 534
+.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_lower/h_m2m_kmu_rat_fit.pdf Graphic file (type pdf
+)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_lower/h_m2m_kmu_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_lower/h_m2m_kmu_rat_fit.pdf use
+d on input line 129.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_lower/h_m2m_kmu_rat_fit_opt.pdf, id=3338, 569.12625pt x
+ 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_lower/h_m2m_kmu_rat_fit_opt.pdf Graphic file (type
+ pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_lower/h_m2m_kmu_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_lower/h_m2m_kmu_rat_fit_opt.pdf
+ used on input line 130.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_lower/h_p.pdf, id=3339, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_lower/h_p.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_lower/h_p.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_lower/h_p.pdf used on input lin
+e 131.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_lower/h_p_rat_fit.pdf, id=3340, 569.12625pt x 534.99875
+pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_lower/h_p_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_lower/h_p_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_lower/h_p_rat_fit.pdf used on i
+nput line 132.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_lower/h_p_rat_fit_opt.pdf, id=3341, 569.12625pt x 534.9
+9875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_lower/h_p_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_lower/h_p_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_lower/h_p_rat_fit_opt.pdf used 
+on input line 133.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_lower/h_t.pdf, id=3342, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_lower/h_t.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_lower/h_t.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_lower/h_t.pdf used on input lin
+e 134.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_lower/h_t_rat_fit.pdf, id=3343, 569.12625pt x 534.99875
+pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_lower/h_t_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_lower/h_t_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_lower/h_t_rat_fit.pdf used on i
+nput line 135.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_lower/h_t_rat_fit_opt.pdf, id=3344, 569.12625pt x 534.9
+9875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_lower/h_t_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_lower/h_t_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_lower/h_t_rat_fit_opt.pdf used 
+on input line 136.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_lower/h_z.pdf, id=3345, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_lower/h_z.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_lower/h_z.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_lower/h_z.pdf used on input lin
+e 137.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_lower/h_z_rat_fit.pdf, id=3346, 569.12625pt x 534.99875
+pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_lower/h_z_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_lower/h_z_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_lower/h_z_rat_fit.pdf used on i
+nput line 138.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_lower/h_z_rat_fit_opt.pdf, id=3347, 569.12625pt x 534.9
+9875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_lower/h_z_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_lower/h_z_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_lower/h_z_rat_fit_opt.pdf used 
+on input line 139.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+ [6
+
+ </Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output
+/2015-09-05am/both_check_lower/h_cda.pdf, page is rotated 90 degrees> </Users/f
+rancisnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-0
+5am/both_check_lower/h_cda_rat_fit.pdf, page is rotated 90 degrees> </Users/fra
+ncisnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05a
+m/both_check_lower/h_cda_rat_fit_opt.pdf, page is rotated 90 degrees> </Users/f
+rancisnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-0
+5am/both_check_lower/h_m2m_kmu.pdf, page is rotated 90 degrees> </Users/francis
+newson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/bo
+th_check_lower/h_m2m_kmu_rat_fit.pdf, page is rotated 90 degrees> </Users/franc
+isnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/
+both_check_lower/h_m2m_kmu_rat_fit_opt.pdf, page is rotated 90 degrees> </Users
+/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09
+-05am/both_check_lower/h_p.pdf, page is rotated 90 degrees> </Users/francisnews
+on/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/both_c
+heck_lower/h_p_rat_fit.pdf, page is rotated 90 degrees> </Users/francisnewson/D
+ocuments/Birmingham/na62/note/working/halo_check/output/2015-09-05am/both_check
+_lower/h_p_rat_fit_opt.pdf, page is rotated 90 degrees> </Users/francisnewson/D
+ocuments/Birmingham/na62/note/working/halo_check/output/2015-09-05am/both_check
+_lower/h_t.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents/Bir
+mingham/na62/note/working/halo_check/output/2015-09-05am/both_check_lower/h_t_r
+at_fit.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents/Birming
+ham/na62/note/working/halo_check/output/2015-09-05am/both_check_lower/h_t_rat_f
+it_opt.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents/Birming
+ham/na62/note/working/halo_check/output/2015-09-05am/both_check_lower/h_z.pdf, 
+page is rotated 90 degrees> </Users/francisnewson/Documents/Birmingham/na62/not
+e/working/halo_check/output/2015-09-05am/both_check_lower/h_z_rat_fit.pdf, page
+ is rotated 90 degrees> </Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_lower/h_z_rat_fit_opt.pdf, page
+ is rotated 90 degrees>]
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_full/h_cda.pdf, id=3999, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_full/h_cda.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_full/h_cda.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_full/h_cda.pdf used on input lin
+e 148.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_full/h_cda_rat_fit.pdf, id=4000, 569.12625pt x 534.99875
+pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_full/h_cda_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_full/h_cda_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_full/h_cda_rat_fit.pdf used on i
+nput line 149.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_full/h_cda_rat_fit_opt.pdf, id=4001, 569.12625pt x 534.9
+9875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_full/h_cda_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_full/h_cda_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_full/h_cda_rat_fit_opt.pdf used 
+on input line 150.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_full/h_m2m_kmu.pdf, id=4002, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_full/h_m2m_kmu.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_full/h_m2m_kmu.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_full/h_m2m_kmu.pdf used on input
+ line 151.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_full/h_m2m_kmu_rat_fit.pdf, id=4003, 569.12625pt x 534.9
+9875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_full/h_m2m_kmu_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_full/h_m2m_kmu_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_full/h_m2m_kmu_rat_fit.pdf used 
+on input line 152.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_full/h_m2m_kmu_rat_fit_opt.pdf, id=4004, 569.12625pt x 5
+34.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_full/h_m2m_kmu_rat_fit_opt.pdf Graphic file (type p
+df)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_full/h_m2m_kmu_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_full/h_m2m_kmu_rat_fit_opt.pdf u
+sed on input line 153.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_full/h_p.pdf, id=4005, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_full/h_p.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_full/h_p.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_full/h_p.pdf used on input line 
+154.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_full/h_p_rat_fit.pdf, id=4006, 569.12625pt x 534.99875pt
+>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_full/h_p_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_full/h_p_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_full/h_p_rat_fit.pdf used on inp
+ut line 155.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_full/h_p_rat_fit_opt.pdf, id=4007, 569.12625pt x 534.998
+75pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_full/h_p_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_full/h_p_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_full/h_p_rat_fit_opt.pdf used on
+ input line 156.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_full/h_t.pdf, id=4008, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_full/h_t.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_full/h_t.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_full/h_t.pdf used on input line 
+157.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_full/h_t_rat_fit.pdf, id=4009, 569.12625pt x 534.99875pt
+>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_full/h_t_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_full/h_t_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_full/h_t_rat_fit.pdf used on inp
+ut line 158.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_full/h_t_rat_fit_opt.pdf, id=4010, 569.12625pt x 534.998
+75pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_full/h_t_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_full/h_t_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_full/h_t_rat_fit_opt.pdf used on
+ input line 159.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_full/h_z.pdf, id=4011, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_full/h_z.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_full/h_z.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_full/h_z.pdf used on input line 
+160.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_full/h_z_rat_fit.pdf, id=4012, 569.12625pt x 534.99875pt
+>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_full/h_z_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_full/h_z_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_full/h_z_rat_fit.pdf used on inp
+ut line 161.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/pos_check_full/h_z_rat_fit_opt.pdf, id=4013, 569.12625pt x 534.998
+75pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/pos_check_full/h_z_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/pos_check_full/h_z_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_full/h_z_rat_fit_opt.pdf used on
+ input line 162.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+ [7
+
+ </Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output
+/2015-09-05am/pos_check_full/h_cda.pdf, page is rotated 90 degrees> </Users/fra
+ncisnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05a
+m/pos_check_full/h_cda_rat_fit.pdf, page is rotated 90 degrees> </Users/francis
+newson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/po
+s_check_full/h_cda_rat_fit_opt.pdf, page is rotated 90 degrees> </Users/francis
+newson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/po
+s_check_full/h_m2m_kmu.pdf, page is rotated 90 degrees> </Users/francisnewson/D
+ocuments/Birmingham/na62/note/working/halo_check/output/2015-09-05am/pos_check_
+full/h_m2m_kmu_rat_fit.pdf, page is rotated 90 degrees> </Users/francisnewson/D
+ocuments/Birmingham/na62/note/working/halo_check/output/2015-09-05am/pos_check_
+full/h_m2m_kmu_rat_fit_opt.pdf, page is rotated 90 degrees> </Users/francisnews
+on/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/pos_ch
+eck_full/h_p.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents/B
+irmingham/na62/note/working/halo_check/output/2015-09-05am/pos_check_full/h_p_r
+at_fit.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents/Birming
+ham/na62/note/working/halo_check/output/2015-09-05am/pos_check_full/h_p_rat_fit
+_opt.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents/Birmingha
+m/na62/note/working/halo_check/output/2015-09-05am/pos_check_full/h_t.pdf, page
+ is rotated 90 degrees> </Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/pos_check_full/h_t_rat_fit.pdf, page is ro
+tated 90 degrees> </Users/francisnewson/Documents/Birmingham/na62/note/working/
+halo_check/output/2015-09-05am/pos_check_full/h_t_rat_fit_opt.pdf, page is rota
+ted 90 degrees> </Users/francisnewson/Documents/Birmingham/na62/note/working/ha
+lo_check/output/2015-09-05am/pos_check_full/h_z.pdf, page is rotated 90 degrees
+> </Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/outpu
+t/2015-09-05am/pos_check_full/h_z_rat_fit.pdf, page is rotated 90 degrees> </Us
+ers/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015
+-09-05am/pos_check_full/h_z_rat_fit_opt.pdf, page is rotated 90 degrees>]
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_full/h_cda.pdf, id=4666, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_full/h_cda.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_full/h_cda.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_full/h_cda.pdf used on input lin
+e 171.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_full/h_cda_rat_fit.pdf, id=4667, 569.12625pt x 534.99875
+pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_full/h_cda_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_full/h_cda_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_full/h_cda_rat_fit.pdf used on i
+nput line 172.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_full/h_cda_rat_fit_opt.pdf, id=4668, 569.12625pt x 534.9
+9875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_full/h_cda_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_full/h_cda_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_full/h_cda_rat_fit_opt.pdf used 
+on input line 173.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_full/h_m2m_kmu.pdf, id=4669, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_full/h_m2m_kmu.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_full/h_m2m_kmu.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_full/h_m2m_kmu.pdf used on input
+ line 174.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_full/h_m2m_kmu_rat_fit.pdf, id=4670, 569.12625pt x 534.9
+9875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_full/h_m2m_kmu_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_full/h_m2m_kmu_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_full/h_m2m_kmu_rat_fit.pdf used 
+on input line 175.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_full/h_m2m_kmu_rat_fit_opt.pdf, id=4671, 569.12625pt x 5
+34.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_full/h_m2m_kmu_rat_fit_opt.pdf Graphic file (type p
+df)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_full/h_m2m_kmu_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_full/h_m2m_kmu_rat_fit_opt.pdf u
+sed on input line 176.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_full/h_p.pdf, id=4672, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_full/h_p.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_full/h_p.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_full/h_p.pdf used on input line 
+177.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_full/h_p_rat_fit.pdf, id=4673, 569.12625pt x 534.99875pt
+>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_full/h_p_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_full/h_p_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_full/h_p_rat_fit.pdf used on inp
+ut line 178.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_full/h_p_rat_fit_opt.pdf, id=4674, 569.12625pt x 534.998
+75pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_full/h_p_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_full/h_p_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_full/h_p_rat_fit_opt.pdf used on
+ input line 179.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_full/h_t.pdf, id=4675, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_full/h_t.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_full/h_t.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_full/h_t.pdf used on input line 
+180.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_full/h_t_rat_fit.pdf, id=4676, 569.12625pt x 534.99875pt
+>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_full/h_t_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_full/h_t_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_full/h_t_rat_fit.pdf used on inp
+ut line 181.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_full/h_t_rat_fit_opt.pdf, id=4677, 569.12625pt x 534.998
+75pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_full/h_t_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_full/h_t_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_full/h_t_rat_fit_opt.pdf used on
+ input line 182.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_full/h_z.pdf, id=4678, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_full/h_z.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_full/h_z.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_full/h_z.pdf used on input line 
+183.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_full/h_z_rat_fit.pdf, id=4679, 569.12625pt x 534.99875pt
+>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_full/h_z_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_full/h_z_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_full/h_z_rat_fit.pdf used on inp
+ut line 184.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/neg_check_full/h_z_rat_fit_opt.pdf, id=4680, 569.12625pt x 534.998
+75pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/neg_check_full/h_z_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/neg_check_full/h_z_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_full/h_z_rat_fit_opt.pdf used on
+ input line 185.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+ [8
+
+ </Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output
+/2015-09-05am/neg_check_full/h_cda.pdf, page is rotated 90 degrees> </Users/fra
+ncisnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05a
+m/neg_check_full/h_cda_rat_fit.pdf, page is rotated 90 degrees> </Users/francis
+newson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/ne
+g_check_full/h_cda_rat_fit_opt.pdf, page is rotated 90 degrees> </Users/francis
+newson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/ne
+g_check_full/h_m2m_kmu.pdf, page is rotated 90 degrees> </Users/francisnewson/D
+ocuments/Birmingham/na62/note/working/halo_check/output/2015-09-05am/neg_check_
+full/h_m2m_kmu_rat_fit.pdf, page is rotated 90 degrees> </Users/francisnewson/D
+ocuments/Birmingham/na62/note/working/halo_check/output/2015-09-05am/neg_check_
+full/h_m2m_kmu_rat_fit_opt.pdf, page is rotated 90 degrees> </Users/francisnews
+on/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/neg_ch
+eck_full/h_p.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents/B
+irmingham/na62/note/working/halo_check/output/2015-09-05am/neg_check_full/h_p_r
+at_fit.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents/Birming
+ham/na62/note/working/halo_check/output/2015-09-05am/neg_check_full/h_p_rat_fit
+_opt.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents/Birmingha
+m/na62/note/working/halo_check/output/2015-09-05am/neg_check_full/h_t.pdf, page
+ is rotated 90 degrees> </Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/neg_check_full/h_t_rat_fit.pdf, page is ro
+tated 90 degrees> </Users/francisnewson/Documents/Birmingham/na62/note/working/
+halo_check/output/2015-09-05am/neg_check_full/h_t_rat_fit_opt.pdf, page is rota
+ted 90 degrees> </Users/francisnewson/Documents/Birmingham/na62/note/working/ha
+lo_check/output/2015-09-05am/neg_check_full/h_z.pdf, page is rotated 90 degrees
+> </Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/outpu
+t/2015-09-05am/neg_check_full/h_z_rat_fit.pdf, page is rotated 90 degrees> </Us
+ers/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015
+-09-05am/neg_check_full/h_z_rat_fit_opt.pdf, page is rotated 90 degrees>]
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_full/h_cda.pdf, id=5331, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_full/h_cda.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_full/h_cda.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_full/h_cda.pdf used on input li
+ne 194.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_full/h_cda_rat_fit.pdf, id=5332, 569.12625pt x 534.9987
+5pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_full/h_cda_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_full/h_cda_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_full/h_cda_rat_fit.pdf used on 
+input line 195.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_full/h_cda_rat_fit_opt.pdf, id=5333, 569.12625pt x 534.
+99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_full/h_cda_rat_fit_opt.pdf Graphic file (type pdf)
+
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_full/h_cda_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_full/h_cda_rat_fit_opt.pdf used
+ on input line 196.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_full/h_m2m_kmu.pdf, id=5334, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_full/h_m2m_kmu.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_full/h_m2m_kmu.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_full/h_m2m_kmu.pdf used on inpu
+t line 197.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_full/h_m2m_kmu_rat_fit.pdf, id=5335, 569.12625pt x 534.
+99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_full/h_m2m_kmu_rat_fit.pdf Graphic file (type pdf)
+
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_full/h_m2m_kmu_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_full/h_m2m_kmu_rat_fit.pdf used
+ on input line 198.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_full/h_m2m_kmu_rat_fit_opt.pdf, id=5336, 569.12625pt x 
+534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_full/h_m2m_kmu_rat_fit_opt.pdf Graphic file (type 
+pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_full/h_m2m_kmu_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_full/h_m2m_kmu_rat_fit_opt.pdf 
+used on input line 199.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_full/h_p.pdf, id=5337, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_full/h_p.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_full/h_p.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_full/h_p.pdf used on input line
+ 200.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_full/h_p_rat_fit.pdf, id=5338, 569.12625pt x 534.99875p
+t>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_full/h_p_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_full/h_p_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_full/h_p_rat_fit.pdf used on in
+put line 201.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_full/h_p_rat_fit_opt.pdf, id=5339, 569.12625pt x 534.99
+875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_full/h_p_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_full/h_p_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_full/h_p_rat_fit_opt.pdf used o
+n input line 202.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_full/h_t.pdf, id=5340, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_full/h_t.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_full/h_t.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_full/h_t.pdf used on input line
+ 203.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_full/h_t_rat_fit.pdf, id=5341, 569.12625pt x 534.99875p
+t>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_full/h_t_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_full/h_t_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_full/h_t_rat_fit.pdf used on in
+put line 204.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_full/h_t_rat_fit_opt.pdf, id=5342, 569.12625pt x 534.99
+875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_full/h_t_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_full/h_t_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_full/h_t_rat_fit_opt.pdf used o
+n input line 205.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_full/h_z.pdf, id=5343, 569.12625pt x 534.99875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_full/h_z.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_full/h_z.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_full/h_z.pdf used on input line
+ 206.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_full/h_z_rat_fit.pdf, id=5344, 569.12625pt x 534.99875p
+t>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_full/h_z_rat_fit.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_full/h_z_rat_fit.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_full/h_z_rat_fit.pdf used on in
+put line 207.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+
+</Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output/
+2015-09-05am/both_check_full/h_z_rat_fit_opt.pdf, id=5345, 569.12625pt x 534.99
+875pt>
+File: /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/ou
+tput/2015-09-05am/both_check_full/h_z_rat_fit_opt.pdf Graphic file (type pdf)
+
+<use /Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/out
+put/2015-09-05am/both_check_full/h_z_rat_fit_opt.pdf>
+Package pdftex.def Info: /Users/francisnewson/Documents/Birmingham/na62/note/wo
+rking/halo_check/output/2015-09-05am/both_check_full/h_z_rat_fit_opt.pdf used o
+n input line 208.
+(pdftex.def)             Requested size: 142.15009pt x 133.6269pt.
+ [9
+
+ </Users/francisnewson/Documents/Birmingham/na62/note/working/halo_check/output
+/2015-09-05am/both_check_full/h_cda.pdf, page is rotated 90 degrees> </Users/fr
+ancisnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05
+am/both_check_full/h_cda_rat_fit.pdf, page is rotated 90 degrees> </Users/franc
+isnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/
+both_check_full/h_cda_rat_fit_opt.pdf, page is rotated 90 degrees> </Users/fran
+cisnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am
+/both_check_full/h_m2m_kmu.pdf, page is rotated 90 degrees> </Users/francisnews
+on/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/both_c
+heck_full/h_m2m_kmu_rat_fit.pdf, page is rotated 90 degrees> </Users/francisnew
+son/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/both_
+check_full/h_m2m_kmu_rat_fit_opt.pdf, page is rotated 90 degrees> </Users/franc
+isnewson/Documents/Birmingham/na62/note/working/halo_check/output/2015-09-05am/
+both_check_full/h_p.pdf, page is rotated 90 degrees> </Users/francisnewson/Docu
+ments/Birmingham/na62/note/working/halo_check/output/2015-09-05am/both_check_fu
+ll/h_p_rat_fit.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents
+/Birmingham/na62/note/working/halo_check/output/2015-09-05am/both_check_full/h_
+p_rat_fit_opt.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents/
+Birmingham/na62/note/working/halo_check/output/2015-09-05am/both_check_full/h_t
+.pdf, page is rotated 90 degrees> </Users/francisnewson/Documents/Birmingham/na
+62/note/working/halo_check/output/2015-09-05am/both_check_full/h_t_rat_fit.pdf,
+ page is rotated 90 degrees> </Users/francisnewson/Documents/Birmingham/na62/no
+te/working/halo_check/output/2015-09-05am/both_check_full/h_t_rat_fit_opt.pdf, 
+page is rotated 90 degrees> </Users/francisnewson/Documents/Birmingham/na62/not
+e/working/halo_check/output/2015-09-05am/both_check_full/h_z.pdf, page is rotat
+ed 90 degrees> </Users/francisnewson/Documents/Birmingham/na62/note/working/hal
+o_check/output/2015-09-05am/both_check_full/h_z_rat_fit.pdf, page is rotated 90
+ degrees> </Users/francisnewson/Documents/Birmingham/na62/note/working/halo_che
+ck/output/2015-09-05am/both_check_full/h_z_rat_fit_opt.pdf, page is rotated 90 
+degrees>] (./report.aux) ) 
+Here is how much of TeX's memory you used:
+ 2513 strings out of 495004
+ 98555 string characters out of 6181263
+ 89301 words of memory out of 5000000
+ 5724 multiletter control sequences out of 15000+600000
+ 4245 words of font info for 16 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 38i,11n,32p,306b,304s stack positions out of 5000i,500n,10000p,200000b,80000s
+</opt/local/share/texmf-texlive/fonts/type1/public/am
+sfonts/cm/cmbx12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfont
+s/cm/cmr10.pfb>
+Output written on report.pdf (9 pages, 1860907 bytes).
+PDF statistics:
+ 6006 PDF objects out of 6186 (max. 8388607)
+ 2458 compressed objects within 25 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 676 words of extra memory for PDF output out of 10000 (max. 10000000)
+
